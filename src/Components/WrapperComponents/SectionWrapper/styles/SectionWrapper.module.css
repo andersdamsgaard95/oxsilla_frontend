@@ -1,0 +1,57 @@
+.wrapper {
+  position: relative;
+  z-index: 1;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.wrapper.fullScreenHeight {
+  min-height: 100vh;
+}
+.wrapper.smallTopPadding {
+  padding-top: 2.5rem;
+}
+.wrapper.largeTopPadding {
+  padding-top: 10rem;
+}
+.wrapper.smallBottomPadding {
+  padding-bottom: 2.5rem;
+}
+.wrapper.largeBottomPadding {
+  padding-bottom: 10rem;
+}
+.wrapper.noTopPadding {
+  padding-top: 0;
+}
+.wrapper.noBottomPadding {
+  padding-bottom: 0;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.backgroundOpacityLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.backgroundOpacityLayer.toRight {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+.backgroundOpacityLayer.toLeft {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+.backgroundOpacityLayer.toBottom {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgb(0, 0, 0) 100%);
+}
+.backgroundOpacityLayer.toTop {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgb(0, 0, 0) 100%);
+}/*# sourceMappingURL=SectionWrapper.module.css.map */

@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  padding: 5rem 0;
+  position: relative;
+}
+.wrapper.left {
+  justify-content: start;
+}
+.wrapper.right {
+  justify-content: end;
+}
+.wrapper.justifyCenter {
+  justify-content: center;
+}
+.wrapper.top {
+  align-items: start;
+}
+.wrapper.bottom {
+  align-items: end;
+}
+.wrapper.alignCenter {
+  align-items: center;
+}
+
+.heroContentDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.heroContentDiv.centerLogo {
+  align-items: center;
+  text-align: center;
+}
+.heroContentDiv.rightAlignLogo {
+  align-items: end;
+  text-align: right;
+}
+
+/*.heroTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+}*/
+.heading {
+  color: white;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+.heading.textAlignCenter {
+  text-align: center;
+}/*# sourceMappingURL=Hero.module.css.map */

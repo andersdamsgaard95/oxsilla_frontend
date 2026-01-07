@@ -1,0 +1,114 @@
+@use '../../../../styles/variables' as *;
+
+.burgerMenu {
+    width: 3.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 1;
+    pointer-events: auto;
+
+    .burgerLine {
+        width: 100%;
+        height: 0.4rem;
+        background-color: $color-white;
+        border-radius: 1rem;
+        transition: all 0.5s ease;
+    }
+
+    &.isScrolled {
+        @media screen and (min-width: $screen-mobile) {
+            transform: translateX($padding-large + 0.1rem);
+
+            @media screen and (max-width: $screen-tablet) {
+                transform: translateX($padding-medium + 0.1rem);
+            }
+
+            @media screen and (max-width: $screen-mobile) {
+                transform: translateX($padding-small + 0.1rem);
+            }
+
+            .burgerLine {
+                box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.35);
+            }
+
+            .burgerLine:nth-of-type(2),
+            .burgerLine:nth-of-type(3) {
+                transform: translateX(20%);
+            }
+        }
+    }
+
+    &:hover {
+        .burgerLine:nth-of-type(1) {
+            transform: translateX(1rem);
+        }
+
+        .burgerLine:nth-of-type(2) {
+            transform: translateX(-1rem);
+        }
+
+        .burgerLine:nth-of-type(3) {
+            transform: translateX(0rem);
+        }
+    }
+
+    &.exit {
+        @media screen and (min-width: $screen-tablet) {
+            transform: translateX(calc(100% + 2.1rem));
+        }
+
+        @media screen and (max-width: $screen-mobile) {
+            transform: translateX(-3rem);
+        }
+
+        .burgerLine:nth-of-type(2) {
+            opacity: 0;
+        }
+
+        .burgerLine:nth-of-type(1) {
+            rotate: -45deg;
+            transform: translateY(1.5rem);
+        }
+
+        .burgerLine:nth-of-type(3) {
+            rotate: 45deg;
+            transform: translateY(-1.5rem);
+        }
+    }
+}
+
+.navContainer {
+    position: fixed;
+    top: 2rem;
+    bottom: 2rem;
+    right: 2rem;
+    transition: transform 0.5s ease;
+    z-index: 0;
+    pointer-events: auto;
+
+    @media screen and (max-width: $screen-mobile) {
+        top: 1rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    &.hidden {
+        transform: translateX(calc(100% + 2rem));
+    }
+}
+
+.menuBackgroundLayer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    pointer-events: auto;
+}

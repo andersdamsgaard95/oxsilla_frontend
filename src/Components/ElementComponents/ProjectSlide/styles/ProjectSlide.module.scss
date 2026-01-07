@@ -1,0 +1,81 @@
+@use '../../../../styles/variables' as *;
+
+.link {
+    text-decoration: none;
+}
+
+.slide {
+    background-color: $color-white;
+    color: $color-black;
+    //aspect-ratio: 8/9;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    //gap: $gap-small;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.imageWrapper {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+
+    @media screen and (max-width: $screen-mobile) {
+        aspect-ratio: 1/1;
+    }
+
+    img {
+        transition: scale 0.2s;
+    }
+
+    &:hover {
+        img {
+            scale: 1.05;
+        }
+    }
+}
+
+.slideText {
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    gap: $gap-medium;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.lastRow {
+    display: flex;
+    justify-content: space-between;
+    gap: $gap-medium;
+    flex-grow: 1;
+
+    .skillsUsed {
+        display: flex;
+        list-style: none;
+        gap: $gap-small;
+        flex-wrap: wrap;
+
+        .skillBox {
+            @include p-styles;
+            padding: 0.2rem 0.8rem;
+            max-height: fit-content;
+            border-radius: 0.8rem;
+        }
+    }
+
+    .linkContainer {
+        white-space: nowrap;
+        @include p-styles;
+        display: flex;
+        align-items: end;
+
+        .arrowLink {
+            text-decoration: none;
+            color: $color-black;
+            display: flex;
+            gap: $gap-small;
+        }
+    }
+}

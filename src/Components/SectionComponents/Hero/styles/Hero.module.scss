@@ -1,0 +1,64 @@
+@use '../../../../styles/variables' as *;
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    padding: $gap-large 0;
+    position: relative;
+
+    &.left {
+        justify-content: start;
+    }
+
+    &.right {
+        justify-content: end;
+    }
+
+    &.justifyCenter {
+        justify-content: center;
+    }
+
+    &.top {
+        align-items: start;
+    }
+
+    &.bottom {
+        align-items: end;
+    }
+
+    &.alignCenter {
+        align-items: center;
+    }
+}
+
+.heroContentDiv {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+
+    &.centerLogo {
+        align-items: center;
+        text-align: center;
+    }
+
+    &.rightAlignLogo {
+        align-items: end;
+        text-align: right;
+    }
+}
+
+/*.heroTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+}*/
+
+.heading {
+    color: white;
+    @include h1-styles;
+    position: relative;
+
+    &.textAlignCenter {
+        text-align: center;
+    }
+}

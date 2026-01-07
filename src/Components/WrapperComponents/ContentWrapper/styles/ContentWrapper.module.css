@@ -1,0 +1,21 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 2000px;
+}
+
+.padding {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+@media screen and (max-width: 1000px) {
+  .padding {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}/*# sourceMappingURL=ContentWrapper.module.css.map */

@@ -1,0 +1,10 @@
+@use '../../../../styles/variables' as *;
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 2000px;
+}
+
+.padding {
+    @include responsivePadding;
+}

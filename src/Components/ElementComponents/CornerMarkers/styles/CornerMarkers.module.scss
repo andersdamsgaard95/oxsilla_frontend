@@ -1,0 +1,88 @@
+@use '../../../../styles/variables' as *;
+
+.wrapper {
+    position: relative;
+    padding: 5rem 7rem;
+    max-width: fit-content;
+    z-index: 0;
+
+    @media screen and (max-width: $screen-mobile) {
+        padding: 2rem 4rem;
+    }
+
+    .leftCorner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-left: 20px solid $color-red;
+        border-bottom: 5px solid $color-red;
+        width: 20%;
+        height: 60%;
+        opacity: 0.6;
+    }
+
+    .rightCorner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-right: 20px solid $color-red;
+        border-top: 5px solid $color-red;
+        width: 30%;
+        height: 60%;
+        opacity: 0.6;
+    }
+
+    &.isButton {
+        padding: 2rem 1rem 2rem 1.5rem;
+
+        .leftCorner {
+            border-left: 7px solid $color-red;
+            border-bottom: 2px solid $color-red;
+            transition: all 0.2s;
+            opacity: 100;
+        }
+
+        .rightCorner {
+            border-right: 2px solid $color-red;
+            border-top: 2px solid $color-red;
+            transition: all 0.2s;
+            opacity: 100;
+        }
+
+        &:hover {
+            .leftCorner {
+                width: 100% !important;
+                height: 100%;
+            }
+
+            .rightCorner {
+                width: 100% !important;
+                height: 100%;
+            }
+        }
+    }
+
+    &.textBlock {
+        .leftCorner {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-left: 20px solid $color-red;
+            border-bottom: 5px solid $color-red;
+            width: 20%;
+            height: 60%;
+            opacity: 0.6;
+        }
+
+        .rightCorner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-right: 5px solid $color-red;
+            border-top: 5px solid $color-red;
+            width: 30%;
+            height: 60%;
+            opacity: 1;
+        }
+    }
+}

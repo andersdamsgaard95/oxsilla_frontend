@@ -1,0 +1,22 @@
+[
+    {
+        "name": "cases",
+        "url": "/cases",
+        "subItems": {}
+    },
+    {
+        "name": "kompetencer",
+        "url": "/kompetencer",
+        "subItems": {}
+    },
+    {
+        "name": "kontakt",
+        "url": "/kontakt",
+        "subItems": {}
+    },
+    {
+        "name": "om",
+        "url": "/om",
+        "subItems": {}
+    }
+]

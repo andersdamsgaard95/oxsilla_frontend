@@ -1,0 +1,192 @@
+[
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/0.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "6/4"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/1.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "4/5"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/2.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "5/3"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/3.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "1/1"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/4.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "4/5"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/5.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "6/5"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/6.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "4/2"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/7.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "5/4"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/8.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "1/1"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/9.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "5/4"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/10.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "7/8"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/11.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "5/6"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/12.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "5/6"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/13.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "5/6"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/14.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "5/4"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/15.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "1/1"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/16.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "4/2"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/17.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "6/7"
+    },
+    {
+        "image": {
+            "src": "/images/frontPageMasonryGrid/18.png",
+            "alt": ""
+        },
+        "text": "Text that describes this project or photo",
+        "buttonText": "Se billeder eller projekt",
+        "href": "/sub-page",
+        "aspectRatio": "5/3"
+    }
+]

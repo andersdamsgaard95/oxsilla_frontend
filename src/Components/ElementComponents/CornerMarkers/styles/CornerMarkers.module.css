@@ -1,0 +1,75 @@
+.wrapper {
+  position: relative;
+  padding: 5rem 7rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  z-index: 0;
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding: 2rem 4rem;
+  }
+}
+.wrapper .leftCorner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 20px solid #951d1d;
+  border-bottom: 5px solid #951d1d;
+  width: 20%;
+  height: 60%;
+  opacity: 0.6;
+}
+.wrapper .rightCorner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 20px solid #951d1d;
+  border-top: 5px solid #951d1d;
+  width: 30%;
+  height: 60%;
+  opacity: 0.6;
+}
+.wrapper.isButton {
+  padding: 2rem 1rem 2rem 1.5rem;
+}
+.wrapper.isButton .leftCorner {
+  border-left: 7px solid #951d1d;
+  border-bottom: 2px solid #951d1d;
+  transition: all 0.2s;
+  opacity: 100;
+}
+.wrapper.isButton .rightCorner {
+  border-right: 2px solid #951d1d;
+  border-top: 2px solid #951d1d;
+  transition: all 0.2s;
+  opacity: 100;
+}
+.wrapper.isButton:hover .leftCorner {
+  width: 100% !important;
+  height: 100%;
+}
+.wrapper.isButton:hover .rightCorner {
+  width: 100% !important;
+  height: 100%;
+}
+.wrapper.textBlock .leftCorner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 20px solid #951d1d;
+  border-bottom: 5px solid #951d1d;
+  width: 20%;
+  height: 60%;
+  opacity: 0.6;
+}
+.wrapper.textBlock .rightCorner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 5px solid #951d1d;
+  border-top: 5px solid #951d1d;
+  width: 30%;
+  height: 60%;
+  opacity: 1;
+}/*# sourceMappingURL=CornerMarkers.module.css.map */

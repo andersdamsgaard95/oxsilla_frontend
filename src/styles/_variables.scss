@@ -1,0 +1,78 @@
+//colours
+$color-red: #951d1d;
+$color-white: #ffffff;
+$color-black: #000000;
+
+//screen sizes
+$screen-mobile: 600px;
+$screen-tablet: 1000px;
+
+// Page Paddings
+$padding-small: 1rem;
+$padding-medium: 5rem;
+$padding-large: 10rem;
+
+//gaps
+$gap-small: 1rem;
+$gap-medium: 2.5rem;
+$gap-large: 5rem;
+$gap-xlarge: 10rem;
+
+@mixin responsivePadding {
+    padding-left: $padding-large;
+    padding-right: $padding-large;
+
+    @media screen and (max-width: $screen-tablet) {
+        padding-left: $padding-medium;
+        padding-right: $padding-medium;
+    }
+
+    @media screen and (max-width: $screen-mobile) {
+        padding-left: $padding-small;
+        padding-right: $padding-small;
+    }
+}
+
+@mixin responsiveMargin {
+    margin-left: $padding-large;
+    margin-right: $padding-large;
+
+    @media screen and (max-width: $screen-tablet) {
+        margin-left: $padding-medium;
+        margin-right: $padding-medium;
+    }
+
+    @media screen and (max-width: $screen-mobile) {
+        margin-left: $padding-small;
+        margin-right: $padding-small;
+    }
+}
+
+@mixin h1-styles {
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+
+    @media screen and (max-width: $screen-mobile) {
+        font-size: 2rem;
+    }
+}
+
+@mixin h2-styles {
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+
+    @media screen and (max-width: $screen-mobile) {
+        font-size: 1.5rem;
+    }
+}
+
+@mixin p-styles {
+    font-size: 1.8rem;
+}
+
+@mixin menuItem {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+}

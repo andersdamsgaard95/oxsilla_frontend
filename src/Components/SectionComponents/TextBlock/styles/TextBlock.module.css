@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.contentContainer {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.contentContainer.textRight {
+  align-self: end;
+}
+.contentContainer.textCenter {
+  align-self: center;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 82rem;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+.heading .smallH2Line {
+  font-size: 0.7em;
+}
+
+.buttonWrapper.buttonRight {
+  align-self: end;
+}
+.buttonWrapper.buttonCenter {
+  align-self: center;
+}/*# sourceMappingURL=TextBlock.module.css.map */

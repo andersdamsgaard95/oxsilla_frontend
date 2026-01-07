@@ -1,0 +1,60 @@
+[
+    {
+        "title": "Pitch Components",
+        "image": {
+            "src": "/images/portfolioProjects/pitchComponents/pitchComponents-hero.png",
+            "alt": ""
+        },
+        "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi quibusdam est expedita possimus, deserunt alias. Optio dolor, aperiam architecto dicta tenetur aliquid quam esse dolorem officia blanditiis",
+        "skillsUsed": [
+            "Shopify",
+            "Branding",
+            "fotografi",
+            "e-commerse"
+        ],
+        "descriptionURL": "/projects/pitch-components"
+    },
+    {
+        "title": "Glowith Skincare",
+        "image": {
+            "src": "/images/portfolioProjects/glowithSkincare/glowith_1.jpg",
+            "alt": ""
+        },
+        "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi quibusdam est expedita possimus, deserunt alias.",
+        "skillsUsed": [
+            "React",
+            "Next.js",
+            "JavaScript",
+            "Strapi headless CMS",
+            "Branding"
+        ],
+        "descriptionURL": "/projects/glowith-skincare"
+    },
+    {
+        "title": "Escea Fireplaces Ambe Brand",
+        "image": {
+            "src": "/images/portfolioProjects/ambe/Ambe-hero.jpg",
+            "alt": ""
+        },
+        "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi quibusdam est expedita possimus, deserunt alias.",
+        "skillsUsed": [
+            "Webflow",
+            "Branding"
+        ],
+        "descriptionURL": "/projects/pitch-components"
+    },
+    {
+        "title": "Fanø Sommerhus",
+        "image": {
+            "src": "/images/portfolioProjects/sommerhusFanø/hus-fra-siden.jpg",
+            "alt": ""
+        },
+        "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi quibusdam est expedita possimus, deserunt alias.",
+        "skillsUsed": [
+            "JavaScript",
+            "Fotografi",
+            "Branding"
+        ],
+        "descriptionURL": "/projects/pitch-components"
+    }
+]

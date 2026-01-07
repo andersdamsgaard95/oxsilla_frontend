@@ -1,0 +1,76 @@
+'use client';
+
+import Link from 'next/link';
+import IconComponent from '../ElementComponents/Icon/IconComponent';
+import styles from './styles/Header.module.scss';
+import BurgerMenu from './BurgerMenu/BurgerMenu';
+import { useEffect, useRef, useState } from 'react';
+
+export default function Header() {
+    const [isScrolled, setIsScrolled] = useState<boolean>(false);
+    const [isScrollingDown, setIsScrollingDown] = useState<boolean>(false);
+    const lastScrollPosition = useRef(0);
+
+    useEffect(() => {
+        let ticking = false;
+
+        function handleScroll() {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    setIsScrolled(window.scrollY > 200);
+                    if (window.scrollY > lastScrollPosition.current) {
+                        setIsScrollingDown(true);
+                    } else {
+                        setIsScrollingDown(false);
+                    }
+                    lastScrollPosition.current = window.scrollY;
+                    ticking = false;
+                })
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        setIsScrolled(window.scrollY > 200);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    return (
+        <div className={`${styles.wrapper} ${isScrolled ? styles.headerScrolled : ''} ${isScrolled && isScrollingDown ? styles.hiddenHeader : ''}`}>
+            <Link
+                className={`${styles.logoWrapper} ${isScrolled ? styles.hiddenLogo : ''}`}
+                href='/'
+                aria-hidden={isScrolled}
+            >
+                <IconComponent
+                    image={{
+                        src: '/icons/logo_header.png',
+                        alt: ''
+                    }}
+                    width={1000}
+                    height={500}
+                />
+            </Link>
+
+            {/* Small logo */}
+            <Link
+                className={`${styles.smallLogoWrapper} ${!isScrolled ? styles.hiddenLogo : ''}`}
+                href='/'
+                aria-hidden={!isScrolled}
+            >
+                <IconComponent
+                    image={{
+                        src: '/icons/logo_small.png',
+                        alt: ''
+                    }}
+                    width={2000}
+                    height={1000}
+                />
+            </Link>
+
+            <BurgerMenu isScrolled={isScrolled} />
+        </div>
+    )
+}

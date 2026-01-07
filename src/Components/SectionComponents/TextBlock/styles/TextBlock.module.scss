@@ -1,0 +1,48 @@
+@use '../../../../styles/variables' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xlarge;
+}
+
+.contentContainer {
+    max-width: fit-content;
+
+    &.textRight {
+        align-self: end;
+    }
+
+    &.textCenter {
+        align-self: center;
+    }
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+    max-width: 82rem;
+}
+
+.heading {
+    @include h2-styles;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+
+    .smallH2Line {
+        font-size: 0.7em;
+    }
+}
+
+.buttonWrapper {
+
+    &.buttonRight {
+        align-self: end;
+    }
+
+    &.buttonCenter {
+        align-self: center;
+    }
+}
