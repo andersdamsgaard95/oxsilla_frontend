@@ -1,0 +1,8 @@
+.boxGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=CompetenciesBoxes.module.css.map */

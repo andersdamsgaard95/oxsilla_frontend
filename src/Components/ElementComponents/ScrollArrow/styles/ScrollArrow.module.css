@@ -6,6 +6,11 @@
   width: 4rem;
   cursor: pointer;
   animation: pulse 2.5s ease-in-out infinite;
+  transition: opacity 0.3s;
+}
+.scrollArrowContainer.hidden {
+  opacity: 0 !important;
+  pointer-events: none;
 }
 
 @keyframes pulse {
@@ -13,7 +18,7 @@
     transform: translateX(-50%) scale(1);
   }
   50% {
-    transform: translateX(-50%) scale(1.1);
+    transform: translateX(-50%) scale(1.2);
   }
   100% {
     transform: translateX(-50%) scale(1);

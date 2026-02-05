@@ -23,6 +23,10 @@ h2 {
     @include h2-styles;
 }
 
+h3 {
+    @include h3-styles;
+}
+
 p {
     @include p-styles;
 }

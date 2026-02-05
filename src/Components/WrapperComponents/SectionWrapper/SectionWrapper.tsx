@@ -19,7 +19,7 @@ export default function SectionWrapper(props: SectionWrapperProps) {
         <div
             className={`${styles.wrapper} ${topPaddingClass} ${bottomPaddingClass}`}
             style={{
-                backgroundColor: props.backgroundColor,
+                backgroundColor: props.backgroundColor
             }}
         >
             {props.backgroundImage && (

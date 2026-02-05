@@ -1,6 +1,9 @@
 import Hero from "@/Components/SectionComponents/Hero/Hero";
 import TextBlock from "@/Components/SectionComponents/TextBlock/TextBlock";
 import TextBlockStyles from '../../Components/SectionComponents/TextBlock/styles/TextBlock.module.scss';
+import CompetenciesBoxes from "@/Components/SectionComponents/CompetenciesBoxes/CompetenciesBoxes";
+import Slider from "@/Components/SectionComponents/Slider/Slider";
+import projects from '../../JSON/portfolioProjects/portfolioProjects.json';
 
 export default function Competencies() {
     return (
@@ -22,7 +25,7 @@ export default function Competencies() {
                 backgroundOpacityLayer={{
                     direction: 'to bottom'
                 }}
-                addScrollArrow
+                addScrollArrow={{ idToScrollTo: 'text-block-section' }}
             />
 
             <TextBlock
@@ -38,12 +41,24 @@ export default function Competencies() {
                 }
                 text="Hos Oxsilla kombinerer vi webudvikling, foto, video og grafisk design i én samlet løsning. Vi bygger hjemmesider til e-commerce, portfolier, informationssider og events/bookingsider, og sørger samtidig for alt visuelt content, så du får et gennemført udtryk fra første klik. Kort sagt: én samarbejdspartner, ét projekt, ét færdigt resultat."
                 cornerMarkers
-            //backgroundColor?: string;
-            //BackgroundImage?: ImageType;
-            //cornerMarkers?: boolean;
-            //button?: ButtonType;
-            //textPosition?: "left" | "center" | "right";
+                //backgroundColor?: string;
+                //BackgroundImage?: ImageType;
+                //cornerMarkers?: boolean;
+                //button?: ButtonType;
+                textPosition="center"
             //buttonPosition?: "left" | "center" | "right";
+            />
+
+            <CompetenciesBoxes
+                backgroundImage={{
+                    src: '/images/fancy-wall.png',
+                    alt: ''
+                }}
+            />
+
+            <Slider
+                slides={projects}
+                heading="Seneste projekter"
             />
         </>
     )

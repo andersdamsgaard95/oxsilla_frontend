@@ -39,8 +39,8 @@
 
 .lastRow {
   display: flex;
-  justify-content: space-between;
   gap: 2.5rem;
+  flex-wrap: wrap;
   flex-grow: 1;
 }
 .lastRow .skillsUsed {
@@ -60,7 +60,10 @@
   white-space: nowrap;
   font-size: 1.8rem;
   display: flex;
-  align-items: end;
+  width: 100%;
+  height: 100%;
+  justify-content: end;
+  align-self: end;
 }
 .lastRow .linkContainer .arrowLink {
   text-decoration: none;

@@ -91,21 +91,14 @@
   position: absolute;
   left: 10rem;
   top: 50%;
-  transform: translate(-50%, -50%);
-  width: 7rem;
-  aspect-ratio: 1/1;
-  border-radius: 0.5rem;
+  transform: translate(-50%, -50%) rotate(90deg);
   border: none;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.arrowBack:hover {
-  transform: translate(-50%, calc(-50% - 0.5rem));
-  box-shadow: 0 6px 10px -3px rgba(0, 0, 0, 0.3);
 }
 .arrowBack:hover .arrow {
   transform: scale(1.1);
@@ -135,21 +128,11 @@
   position: absolute;
   right: 10rem;
   top: 50%;
-  transform: translate(50%, -50%);
-  width: 7rem;
-  aspect-ratio: 1/1;
-  border-radius: 0.5rem;
+  transform: translate(50%, -50%) rotate(-90deg);
   border: none;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.arrowNext:hover {
-  transform: translate(50%, calc(-50% - 0.5rem));
-  box-shadow: 0 6px 10px -3px rgba(0, 0, 0, 0.3);
 }
 .arrowNext:hover .arrow {
   transform: scale(1.1);

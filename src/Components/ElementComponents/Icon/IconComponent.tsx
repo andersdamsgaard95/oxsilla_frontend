@@ -10,13 +10,17 @@ interface IconComponentProps {
 
 export default function IconComponent(props: IconComponentProps) {
     return (
-        <div className={`${styles.wrapper}`}>
+        <div
+            className={`${styles.wrapper}`}
+            style={{
+                aspectRatio: `${props.width} / ${props.height}`
+            }}
+        >
             <Image
                 src={props.image.src}
                 alt={props.image.alt}
-                width={props.height}
-                height={props.width}
                 className={`${styles.image}`}
+                fill
             />
         </div>
     )

@@ -1,0 +1,10 @@
+@use '../../../../styles/variables' as *;
+
+.boxGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: $gap-large;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}

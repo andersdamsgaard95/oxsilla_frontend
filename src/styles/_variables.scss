@@ -18,6 +18,9 @@ $gap-medium: 2.5rem;
 $gap-large: 5rem;
 $gap-xlarge: 10rem;
 
+//border radius
+$border-radius: 0.8rem;
+
 @mixin responsivePadding {
     padding-left: $padding-large;
     padding-right: $padding-large;
@@ -68,11 +71,26 @@ $gap-xlarge: 10rem;
     }
 }
 
+@mixin h3-styles {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+
+    @media screen and (max-width: $screen-mobile) {
+        font-size: 1.5rem;
+    }
+}
+
 @mixin p-styles {
     font-size: 1.8rem;
 }
 
 @mixin menuItem {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+}
+
+@mixin link-font-styles {
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
 }

@@ -1,6 +1,6 @@
 import SectionWrapper from '@/Components/WrapperComponents/SectionWrapper/SectionWrapper';
 import styles from './styles/Hero.module.scss';
-import { ButtonType, ImageType, backgroundOpacityLayerType } from '@/types/types';
+import { ButtonType, ImageType, backgroundOpacityLayerType, scrollArrowType } from '@/types/types';
 import ContentWrapper from '@/Components/WrapperComponents/ContentWrapper/ContentWrapper';
 import CornerMarkers from '@/Components/ElementComponents/CornerMarkers/CornerMarkers';
 import AnimatedLogo from '@/Components/ElementComponents/AnimatedLogo/AnimatedLogo';
@@ -17,7 +17,7 @@ interface HeroProps {
    addCornerMarker?: boolean;
    addAnimatedLogo?: boolean;
    backgroundOpacityLayer?: backgroundOpacityLayerType;
-   addScrollArrow?: boolean;
+   addScrollArrow?: scrollArrowType;
    button?: ButtonType;
 }
 
@@ -79,7 +79,9 @@ export default function Hero(props: HeroProps) {
                </div>
 
                {props.addScrollArrow && (
-                  <ScrollArrow />
+                  <ScrollArrow
+                     idToScrollTo={props.addScrollArrow.idToScrollTo}
+                  />
                )}
 
             </section>

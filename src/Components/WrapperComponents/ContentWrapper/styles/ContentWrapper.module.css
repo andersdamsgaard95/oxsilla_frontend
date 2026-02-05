@@ -1,6 +1,7 @@
 .wrapper {
   margin: 0 auto;
   max-width: 2000px;
+  min-height: 100%;
 }
 
 .padding {

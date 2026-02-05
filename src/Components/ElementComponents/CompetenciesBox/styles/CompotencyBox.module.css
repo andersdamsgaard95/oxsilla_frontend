@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  height: 100%;
+}
+
+.transparentBox {
+  position: relative;
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left bottom;
+  height: 100%;
+}
+.transparentBox .text {
+  z-index: 10;
+  position: relative;
+}
+.transparentBox .text .line {
+  margin-top: 1rem;
+  display: block;
+}
+.transparentBox .darkLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}/*# sourceMappingURL=CompotencyBox.module.css.map */

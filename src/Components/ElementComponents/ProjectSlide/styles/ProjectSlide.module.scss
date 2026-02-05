@@ -47,8 +47,10 @@
 
 .lastRow {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     gap: $gap-medium;
+    flex-wrap: wrap;
+    //margin-top: auto;
     flex-grow: 1;
 
     .skillsUsed {
@@ -69,7 +71,10 @@
         white-space: nowrap;
         @include p-styles;
         display: flex;
-        align-items: end;
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        align-self: end;
 
         .arrowLink {
             text-decoration: none;

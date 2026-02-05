@@ -49,8 +49,8 @@ export default function Header() {
                         src: '/icons/logo_header.png',
                         alt: ''
                     }}
-                    width={1000}
-                    height={500}
+                    width={229}
+                    height={42.7}
                 />
             </Link>
 
@@ -65,8 +65,8 @@ export default function Header() {
                         src: '/icons/logo_small.png',
                         alt: ''
                     }}
-                    width={2000}
-                    height={1000}
+                    width={1}
+                    height={1}
                 />
             </Link>
 

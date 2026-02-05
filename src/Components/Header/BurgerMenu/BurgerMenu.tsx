@@ -52,7 +52,9 @@ export default function BurgerMenu(props: BurgerMenuProps) {
                 className={`${styles.navContainer} ${!menuIsShown ? styles.hidden : ''}`}
                 aria-hidden={!menuIsShown}
             >
-                <GlobalMenu />
+                <GlobalMenu
+                    setMenuIsShown={setMenuIsShown}
+                />
             </div>
 
             {menuIsShown && (

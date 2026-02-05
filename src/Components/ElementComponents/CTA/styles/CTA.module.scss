@@ -1,0 +1,17 @@
+@use '../../../../styles/variables' as *;
+
+.link {
+    @include link-font-styles;
+    display: flex;
+    gap: $gap-small;
+
+    &:hover {
+        .arrow {
+            transform: translateX($gap-small);
+        }
+    }
+}
+
+.arrow {
+    transition: transform 0.3s;
+}

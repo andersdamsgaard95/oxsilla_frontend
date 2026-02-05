@@ -15,6 +15,7 @@ interface TextBlockProps {
     textPosition?: "left" | "center" | "right";
     buttonPosition?: "left" | "center" | "right";
     backgroundOpacityLayer?: backgroundOpacityLayerType;
+    minimumHeightInPx?: number;
 }
 
 export default function TextBlock(props: TextBlockProps) {
@@ -29,7 +30,13 @@ export default function TextBlock(props: TextBlockProps) {
             backgroundOpacityLayer={props.backgroundOpacityLayer}
         >
             <ContentWrapper>
-                <section id='text-block-section' className={styles.wrapper}>
+                <section
+                    id='text-block-section'
+                    className={styles.wrapper}
+                    style={{
+                        minHeight: props.minimumHeightInPx ? `${props.minimumHeightInPx / 10}rem` : ''
+                    }}
+                >
                     <div className={`${styles.contentContainer} ${textPositionClass}`}>
                         {props.cornerMarkers ? (
                             <CornerMarkers

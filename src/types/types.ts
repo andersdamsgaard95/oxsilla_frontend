@@ -9,6 +9,12 @@ export interface ButtonType {
     color?: 'black' | 'white';
 }
 
+export interface CTAType {
+    text: string;
+    href: string;
+    color?: 'black' | 'white' | 'red';
+}
+
 export interface portfolioProjectType {
     title: string;
     image: ImageType;
@@ -28,3 +34,12 @@ export interface MasonryGridItemType {
 export interface backgroundOpacityLayerType {
     direction: "to right" | "to left" | "to bottom" | "to top"
 };
+
+export interface competencyType {
+    title: string,
+    description: string;
+}
+
+export interface scrollArrowType {
+    idToScrollTo: string;
+}

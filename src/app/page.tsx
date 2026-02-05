@@ -27,6 +27,9 @@ export default function Home() {
           text: 'kontakt',
           href: '/kontakt'
         }}
+        backgroundOpacityLayer={{
+          direction: 'to bottom'
+        }}
       />
 
       <TextBlock
@@ -51,6 +54,10 @@ export default function Home() {
         }}
         textPosition="left"
         buttonPosition="center"
+        minimumHeightInPx={500}
+        backgroundOpacityLayer={{
+          direction: 'to top'
+        }}
       />
 
       <Slider

@@ -3,6 +3,7 @@ import ImageComponent from '../Image/ImageComponent';
 import styles from './styles/ProjectSlide.module.scss';
 import Link from 'next/link';
 import { getSkillColorCode } from '@/helperFunctions/getSkillColorCode';
+import CTA from '../CTA/CTA';
 
 interface ProjectSlideProps {
     slide: portfolioProjectType;
@@ -43,8 +44,11 @@ export default function ProjectSlide(props: ProjectSlideProps) {
                                 <div
                                     className={styles.arrowLink}
                                 >
-                                    Se projekt
-                                    <p>--{'>'}</p>
+                                    <CTA
+                                        text='See case'
+                                        destination={props.slide.descriptionURL}
+                                        isNestedLink
+                                    />
                                 </div>
                             </div>
                         )}
