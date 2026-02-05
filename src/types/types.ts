@@ -21,6 +21,10 @@ export interface portfolioProjectType {
     shortDescription: string;
     skillsUsed: string[];
     descriptionURL: string;
+    info?: {
+        date?: string;
+        klient?: string;
+    }
 }
 
 export interface MasonryGridItemType {

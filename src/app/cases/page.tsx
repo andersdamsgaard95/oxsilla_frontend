@@ -15,6 +15,7 @@ export default function cases() {
                         Cases
                     </>
                 }
+                heading2='Fruit salad yummi yummi'
                 textPosition="center"
                 addCornerMarker
                 backgroundOpacityLayer={{

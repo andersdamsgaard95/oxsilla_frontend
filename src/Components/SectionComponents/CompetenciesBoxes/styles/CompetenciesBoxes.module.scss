@@ -7,4 +7,9 @@
     position: relative;
     background-size: cover;
     background-position: center;
+
+    @media screen and (max-width: $screen-tablet) {
+        display: flex;
+        flex-direction: column;
+    }
 }

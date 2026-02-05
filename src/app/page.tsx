@@ -44,7 +44,7 @@ export default function Home() {
           </>
         }
         BackgroundImage={{
-          src: '/images/alexander.png',
+          src: '/images/alexander2.png',
           alt: 'alexander'
         }}
         cornerMarkers
@@ -54,7 +54,7 @@ export default function Home() {
         }}
         textPosition="left"
         buttonPosition="center"
-        minimumHeightInPx={500}
+        minimumHeightInPx={700}
         backgroundOpacityLayer={{
           direction: 'to top'
         }}

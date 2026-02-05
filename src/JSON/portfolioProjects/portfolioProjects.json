@@ -12,7 +12,11 @@
             "fotografi",
             "e-commerse"
         ],
-        "descriptionURL": "/projects/pitch-components"
+        "descriptionURL": "/projects/pitch-components",
+        "info": {
+            "date": "August 2025",
+            "klient": "Pitch Components"
+        }
     },
     {
         "title": "Glowith Skincare",
@@ -28,7 +32,11 @@
             "Strapi headless CMS",
             "Branding"
         ],
-        "descriptionURL": "/projects/glowith-skincare"
+        "descriptionURL": "/projects/glowith-skincare",
+        "info": {
+            "date": "October 2025",
+            "klient": "Glowith Skincare"
+        }
     },
     {
         "title": "Escea Fireplaces Ambe Brand",
@@ -41,7 +49,11 @@
             "Webflow",
             "Branding"
         ],
-        "descriptionURL": "/projects/pitch-components"
+        "descriptionURL": "/projects/pitch-components",
+        "info": {
+            "date": "May 2025",
+            "klient": "Escea Fireplaces"
+        }
     },
     {
         "title": "Fanø Sommerhus",
@@ -55,6 +67,9 @@
             "Fotografi",
             "Branding"
         ],
-        "descriptionURL": "/projects/pitch-components"
+        "descriptionURL": "/projects/pitch-components",
+        "info": {
+            "date": "July 2024"
+        }
     }
 ]

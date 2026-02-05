@@ -5,4 +5,10 @@
   position: relative;
   background-size: cover;
   background-position: center;
+}
+@media screen and (max-width: 1000px) {
+  .boxGrid {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=CompetenciesBoxes.module.css.map */

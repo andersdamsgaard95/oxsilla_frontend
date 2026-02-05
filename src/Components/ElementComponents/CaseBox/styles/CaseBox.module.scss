@@ -10,6 +10,10 @@
     color: inherit;
     text-decoration: none;
 
+    @media screen and (max-width: $screen-tablet) {
+        flex-direction: column-reverse;
+    }
+
     &:hover {
         .backgroundImage {
             scale: 1.03;
@@ -17,8 +21,21 @@
     }
 }
 
-.textWrapper {
+.caseInfo {
+    display: flex;
+    gap: $gap-medium;
+    flex-wrap: wrap;
+}
+
+.description {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+    justify-content: space-between;
+}
+
+.textWrapper {
     display: flex;
     flex-direction: column;
     gap: $gap-medium;
@@ -26,7 +43,6 @@
 }
 
 .skillsUsed {
-    margin-top: $gap-large;
     display: flex;
     list-style: none;
     gap: $gap-small;

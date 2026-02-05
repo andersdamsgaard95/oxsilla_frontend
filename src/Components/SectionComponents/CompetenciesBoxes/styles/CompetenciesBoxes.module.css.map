@@ -1,1 +1,1 @@
-{"version":3,"sources":["CompetenciesBoxes.module.scss","../../../../styles/_variables.scss","CompetenciesBoxes.module.css"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,kCAAA;EACA,SCYQ;EDXR,kBAAA;EACA,sBAAA;EACA,2BAAA;AEDJ","file":"CompetenciesBoxes.module.css"}
+{"version":3,"sources":["CompetenciesBoxes.module.scss","../../../../styles/_variables.scss","CompetenciesBoxes.module.css"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,kCAAA;EACA,SCYQ;EDXR,kBAAA;EACA,sBAAA;EACA,2BAAA;AEDJ;AFGI;EARJ;IASQ,aAAA;IACA,sBAAA;EEAN;AACF","file":"CompetenciesBoxes.module.css"}
