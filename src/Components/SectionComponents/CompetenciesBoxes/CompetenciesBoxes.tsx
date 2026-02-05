@@ -3,7 +3,6 @@ import styles from './styles/CompetenciesBoxes.module.scss';
 import ContentWrapper from '@/Components/WrapperComponents/ContentWrapper/ContentWrapper';
 import competenciesBoxes from '../../../JSON/competencies/competencies.json';
 import CompetencyBox from '@/Components/ElementComponents/CompetenciesBox/CompetencyBox';
-import ImageComponent from '@/Components/ElementComponents/Image/ImageComponent';
 import { ImageType } from '@/types/types';
 
 interface CompetenciesBoxProps {

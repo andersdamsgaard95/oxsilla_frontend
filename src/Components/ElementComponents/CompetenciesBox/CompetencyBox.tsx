@@ -10,14 +10,16 @@ export default function CompetencyBox(props: CompetencyBoxProps) {
 
     const competency = props.competency;
 
+    const style: React.CSSProperties & { ['--bg-image']: string } = {
+        '--bg-image': `url(${props.backgroundImage.src})`,
+    };
+
     return (
         <div className={styles.wrapper}>
             <h3>{competency.title}</h3>
             <div
                 className={styles.transparentBox}
-                style={{
-                    ['--bg-image' as any]: `url(${props.backgroundImage.src})`,
-                }}
+                style={style}
             >
                 <p className={styles.text}>
                     {competency.description.split('\n').map((line, i) => (

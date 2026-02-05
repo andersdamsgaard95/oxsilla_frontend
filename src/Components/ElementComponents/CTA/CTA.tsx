@@ -1,4 +1,3 @@
-import { CTAType } from '@/types/types';
 import styles from './styles/CTA.module.scss';
 import Link from 'next/link';
 import { getThemeColor } from '@/helperFunctions/getThemeColor';

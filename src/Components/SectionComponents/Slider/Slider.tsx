@@ -4,7 +4,6 @@ import SectionWrapper from '@/Components/WrapperComponents/SectionWrapper/Sectio
 import styles from './styles/Slider.module.scss';
 import { useWindowSize } from 'react-use';
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 import ProjectSlide from '@/Components/ElementComponents/ProjectSlide/ProjectSlide';
 import { ImageType, backgroundOpacityLayerType, portfolioProjectType } from '@/types/types';
 import IconComponent from '@/Components/ElementComponents/Icon/IconComponent';
@@ -88,7 +87,7 @@ export default function Slider(props: SliderProps) {
                 <h2 className={styles.heading}>{props.heading}</h2>
 
                 <div className={styles.sliderTrack} ref={sliderRef}>
-                    {props.slides && props.slides.length > 0 && props.slides.map((slide: any, i: number) => (
+                    {props.slides && props.slides.length > 0 && props.slides.map((slide: portfolioProjectType, i: number) => (
                         <div key={i} className={styles.slideContainer}>
                             <ProjectSlide
                                 slide={slide}
