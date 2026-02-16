@@ -5,18 +5,13 @@
         "subItems": {}
     },
     {
-        "name": "kompetencer",
-        "url": "/kompetencer",
+        "name": "what we do",
+        "url": "/competencies",
         "subItems": {}
     },
     {
-        "name": "kontakt",
-        "url": "/kontakt",
-        "subItems": {}
-    },
-    {
-        "name": "om",
-        "url": "/om",
+        "name": "contact",
+        "url": "/contact",
         "subItems": {}
     }
 ]

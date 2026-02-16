@@ -24,7 +24,14 @@ export interface portfolioProjectType {
     info?: {
         date?: string;
         klient?: string;
-    }
+    },
+    casePageSections: {
+        [key: string]: {
+            heading: string;
+            text: string;
+        };
+    },
+    backgroundColor: string;
 }
 
 export interface MasonryGridItemType {
@@ -36,7 +43,8 @@ export interface MasonryGridItemType {
 }
 
 export interface backgroundOpacityLayerType {
-    direction: "to right" | "to left" | "to bottom" | "to top"
+    direction: "to right" | "to left" | "to bottom" | "to top",
+    sticky?: boolean
 };
 
 export interface competencyType {

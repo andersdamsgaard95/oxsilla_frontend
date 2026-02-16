@@ -1,4 +1,4 @@
-import CaseBoxes from "@/Components/SectionComponents/CompetenciesBoxes/CaseBoxes/CaseBoxes";
+import CaseBoxes from "@/Components/SectionComponents/CaseBoxes/CaseBoxes";
 import Hero from "@/Components/SectionComponents/Hero/Hero";
 import projects from '../../JSON/portfolioProjects/portfolioProjects.json';
 

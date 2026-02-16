@@ -4,6 +4,32 @@
     margin: 0 auto;
     max-width: 2000px;
     min-height: 100%;
+    padding-top: $gap-large;
+    padding-bottom: $gap-large;
+
+    &.smallTopPadding {
+        padding-top: $gap-medium;
+    }
+
+    &.largeTopPadding {
+        padding-top: $gap-xlarge;
+    }
+
+    &.smallBottomPadding {
+        padding-bottom: $gap-medium;
+    }
+
+    &.largeBottomPadding {
+        padding-bottom: $gap-xlarge;
+    }
+
+    &.noTopPadding {
+        padding-top: 0;
+    }
+
+    &.noBottomPadding {
+        padding-bottom: 0;
+    }
 }
 
 .padding {

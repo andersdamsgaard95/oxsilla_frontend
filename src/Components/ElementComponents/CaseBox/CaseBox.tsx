@@ -14,7 +14,7 @@ export default function CaseBox(props: CaseBoxProps) {
     const project = props.project;
 
     return (
-        <Link href={project.descriptionURL} className={styles.wrapper}>
+        <Link href={`/cases/${project.descriptionURL}`} className={styles.wrapper}>
             <div className={styles.description}>
                 <div className={styles.caseInfo}>
                     {project.info &&

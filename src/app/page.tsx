@@ -24,8 +24,8 @@ export default function Home() {
         backgroundColor="black"
         addAnimatedLogo
         button={{
-          text: 'kontakt',
-          href: '/kontakt'
+          text: 'contact',
+          href: '/contact'
         }}
         backgroundOpacityLayer={{
           direction: 'to bottom'
@@ -44,19 +44,20 @@ export default function Home() {
           </>
         }
         BackgroundImage={{
-          src: '/images/alexander2.png',
+          src: '/images/alek_høj.png',
           alt: 'alexander'
         }}
         cornerMarkers
         button={{
-          text: 'kompetencer',
-          href: '/kompetencer'
+          text: 'what we do',
+          href: '/competencies'
         }}
-        textPosition="left"
+        textPosition="center"
         buttonPosition="center"
-        minimumHeightInPx={700}
+        minimumHeightInPx={1400}
         backgroundOpacityLayer={{
-          direction: 'to top'
+          direction: 'to top',
+          sticky: true
         }}
       />
 

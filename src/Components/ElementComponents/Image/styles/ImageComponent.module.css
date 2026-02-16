@@ -13,4 +13,7 @@
 .image.contain {
   -o-object-fit: contain;
      object-fit: contain;
+}
+.image.borderRadius {
+  border-radius: 1rem;
 }/*# sourceMappingURL=ImageComponent.module.css.map */

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import './globalStyles/globals.scss';
 import { Varela_Round } from 'next/font/google'
 import Header from "@/Components/Header/Header";
+import Footer from "@/Components/Footer/Footer";
+import PopUp from "@/Components/ElementComponents/PopUp/PopUp";
 
 export const metadata: Metadata = {
   title: "Oxsilla Creative House | Web development and media productions",
@@ -31,7 +33,10 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-        <footer></footer>
+        <footer>
+          <Footer />
+        </footer>
+        <PopUp />
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'react';
 import ProjectSlide from '@/Components/ElementComponents/ProjectSlide/ProjectSlide';
 import { ImageType, backgroundOpacityLayerType, portfolioProjectType } from '@/types/types';
 import IconComponent from '@/Components/ElementComponents/Icon/IconComponent';
+import ContentWrapper from '@/Components/WrapperComponents/ContentWrapper/ContentWrapper';
 
 interface SliderProps {
     slides?: portfolioProjectType[];
@@ -79,66 +80,73 @@ export default function Slider(props: SliderProps) {
     return (
         <SectionWrapper
             backgroundImage={props.backgroundImage}
-            topPadding='large' bottomPadding='large'
+            //topPadding='large' bottomPadding='large'
             backgroundOpacityLayer={props.backgroundOpacityLayer}
         >
-            <div className={styles.wrapper}>
+            <ContentWrapper
+                fullWidth
+                topPadding='large'
+                bottomPadding='large'
+            >
+                <div className={styles.wrapper}>
 
-                <h2 className={styles.heading}>{props.heading}</h2>
+                    <h2 className={styles.heading}>{props.heading}</h2>
 
-                <div className={styles.sliderTrack} ref={sliderRef}>
-                    {props.slides && props.slides.length > 0 && props.slides.map((slide: portfolioProjectType, i: number) => (
-                        <div key={i} className={styles.slideContainer}>
-                            <ProjectSlide
-                                slide={slide}
-                            />
-                        </div>
-                    ))}
+                    <div className={styles.sliderTrack} ref={sliderRef}>
+                        {props.slides && props.slides.length > 0 && props.slides.map((slide: portfolioProjectType, i: number) => (
+                            <div key={i} className={styles.slideContainer}>
+                                <ProjectSlide
+                                    slide={slide}
+                                />
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Arrow buttons */}
+                    {width >= 600 && (!prevIsDisabled || !nextIsDisabled) && (
+                        <>
+                            <button
+                                aria-label='Slide to previous slide'
+                                className={`${styles.arrowBack}`}
+                                onClick={prevSlide}
+                                disabled={prevIsDisabled}
+                            >
+                                <div className={styles.arrow}>
+                                    <IconComponent
+                                        image={{
+                                            src: '/icons/scroll_arrow.svg',
+                                            alt: 'Slide to previous slide'
+                                        }}
+                                        width={1}
+                                        height={1}
+                                    />
+                                </div>
+
+                            </button>
+
+                            <button
+                                aria-label='Slide to next slide'
+                                className={`${styles.arrowNext}`}
+                                onClick={nextSlide}
+                                disabled={nextIsDisabled}
+                            >
+                                <div className={styles.arrow}>
+                                    <IconComponent
+                                        image={{
+                                            src: '/icons/scroll_arrow.svg',
+                                            alt: 'Slide to next slide'
+                                        }}
+                                        width={1}
+                                        height={1}
+                                    />
+                                </div>
+                            </button>
+                        </>
+                    )}
+
                 </div>
+            </ContentWrapper>
 
-                {/* Arrow buttons */}
-                {width >= 600 && (!prevIsDisabled || !nextIsDisabled) && (
-                    <>
-                        <button
-                            aria-label='Slide to previous slide'
-                            className={`${styles.arrowBack}`}
-                            onClick={prevSlide}
-                            disabled={prevIsDisabled}
-                        >
-                            <div className={styles.arrow}>
-                                <IconComponent
-                                    image={{
-                                        src: '/icons/scroll_arrow.svg',
-                                        alt: 'Slide to previous slide'
-                                    }}
-                                    width={1}
-                                    height={1}
-                                />
-                            </div>
-
-                        </button>
-
-                        <button
-                            aria-label='Slide to next slide'
-                            className={`${styles.arrowNext}`}
-                            onClick={nextSlide}
-                            disabled={nextIsDisabled}
-                        >
-                            <div className={styles.arrow}>
-                                <IconComponent
-                                    image={{
-                                        src: '/icons/scroll_arrow.svg',
-                                        alt: 'Slide to next slide'
-                                    }}
-                                    width={1}
-                                    height={1}
-                                />
-                            </div>
-                        </button>
-                    </>
-                )}
-
-            </div>
         </SectionWrapper>
     )
 }

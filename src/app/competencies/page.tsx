@@ -54,6 +54,11 @@ export default function Competencies() {
                     src: '/images/fancy-wall.png',
                     alt: ''
                 }}
+                button={{
+                    text: 'shoot us a message',
+                    href: '/contact'
+                }}
+                buttonPosition="center"
             />
 
             <Slider

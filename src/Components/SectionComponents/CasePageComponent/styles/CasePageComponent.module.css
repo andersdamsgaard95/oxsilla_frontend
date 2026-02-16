@@ -1,0 +1,112 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  overflow: hidden;
+  background: linear-gradient(to top right, black, rgba(255, 255, 255, 0.3), black);
+}
+.wrapper:before {
+  z-index: 0;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black, transparent, black);
+}
+
+.caseHero {
+  z-index: 10;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+@media screen and (max-width: 1000px) {
+  .caseHero {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .caseHero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .caseHero {
+    flex-direction: column-reverse;
+  }
+}
+.caseHero .text {
+  flex: 1;
+}
+.caseHero .heroImageWrapper {
+  width: 100%;
+  flex: 1;
+  aspect-ratio: 8/5;
+  position: relative;
+  background-color: rgb(54, 53, 53);
+  border-radius: 1rem;
+}
+.caseHero .heroImageWrapper .glow {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  width: 120%;
+  height: 180%;
+}
+
+.text {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.section2 {
+  padding-left: 10vw;
+  z-index: 10;
+}
+
+.section3 {
+  z-index: 10;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .section3 {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.section3 .image2Container {
+  width: 100%;
+  max-width: 50rem;
+  aspect-ratio: 4/6;
+}
+
+.section4 {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .section4 {
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+}
+.section4 .image3Container {
+  width: 100%;
+  max-width: 80rem;
+  aspect-ratio: 6/4;
+}/*# sourceMappingURL=CasePageComponent.module.css.map */

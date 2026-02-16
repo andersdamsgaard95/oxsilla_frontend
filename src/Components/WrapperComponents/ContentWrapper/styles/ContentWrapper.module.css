@@ -2,6 +2,26 @@
   margin: 0 auto;
   max-width: 2000px;
   min-height: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.wrapper.smallTopPadding {
+  padding-top: 2.5rem;
+}
+.wrapper.largeTopPadding {
+  padding-top: 10rem;
+}
+.wrapper.smallBottomPadding {
+  padding-bottom: 2.5rem;
+}
+.wrapper.largeBottomPadding {
+  padding-bottom: 10rem;
+}
+.wrapper.noTopPadding {
+  padding-top: 0;
+}
+.wrapper.noBottomPadding {
+  padding-bottom: 0;
 }
 
 .padding {

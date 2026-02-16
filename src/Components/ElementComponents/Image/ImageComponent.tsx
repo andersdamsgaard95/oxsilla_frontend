@@ -5,6 +5,7 @@ import Image from 'next/image';
 interface ImageComponentProps {
     image: ImageType;
     contain?: boolean;
+    borderRadius?: boolean;
 }
 
 export default function ImageComponent(props: ImageComponentProps) {
@@ -16,8 +17,8 @@ export default function ImageComponent(props: ImageComponentProps) {
                 //width={1000}
                 //height={1000}
                 fill
-                className={`${styles.image} ${props.contain ? styles.contain : ''}`}
+                className={`${styles.image} ${props.contain ? styles.contain : ''} ${props.borderRadius ? styles.borderRadius : ''}`}
             />
-        </div> 
+        </div>
     )
 }

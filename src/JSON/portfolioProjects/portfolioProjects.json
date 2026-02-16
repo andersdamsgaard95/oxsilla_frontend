@@ -5,18 +5,33 @@
             "src": "/images/portfolioProjects/pitchComponents/pitchComponents-hero.png",
             "alt": ""
         },
-        "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi quibusdam est expedita possimus, deserunt alias. Optio dolor, aperiam architecto dicta tenetur aliquid quam esse dolorem officia blanditiis",
+        "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi quibusdam est expedita possimus, deserunt alias. Optio dolor, aperiam architecto dicta.",
         "skillsUsed": [
             "Shopify",
             "Branding",
             "fotografi",
             "e-commerse"
         ],
-        "descriptionURL": "/projects/pitch-components",
+        "descriptionURL": "pitch-components",
         "info": {
             "date": "August 2025",
             "klient": "Pitch Components"
-        }
+        },
+        "casePageSections": {
+            "section2": {
+                "heading": "Heading 2",
+                "text": "jnjqnowqnxo"
+            },
+            "section3": {
+                "heading": "Heading 3",
+                "text": "jnjqnowqnxo"
+            },
+            "section4": {
+                "heading": "Heading 4",
+                "text": "jnjqnowqnxo"
+            }
+        },
+        "backgroundColor": "#000000"
     },
     {
         "title": "Glowith Skincare",
@@ -32,11 +47,26 @@
             "Strapi headless CMS",
             "Branding"
         ],
-        "descriptionURL": "/projects/glowith-skincare",
+        "descriptionURL": "glowith-skincare",
         "info": {
             "date": "October 2025",
             "klient": "Glowith Skincare"
-        }
+        },
+        "casePageSections": {
+            "section2": {
+                "heading": "Heading 2",
+                "text": "jnjqnowqnxo"
+            },
+            "section3": {
+                "heading": "Heading 3",
+                "text": "jnjqnowqnxo"
+            },
+            "section4": {
+                "heading": "Heading 4",
+                "text": "jnjqnowqnxo"
+            }
+        },
+        "backgroundColor": "#ffffff"
     },
     {
         "title": "Escea Fireplaces Ambe Brand",
@@ -49,11 +79,26 @@
             "Webflow",
             "Branding"
         ],
-        "descriptionURL": "/projects/pitch-components",
+        "descriptionURL": "escea-fireplaces",
         "info": {
             "date": "May 2025",
             "klient": "Escea Fireplaces"
-        }
+        },
+        "casePageSections": {
+            "section2": {
+                "heading": "Heading 2",
+                "text": "jnjqnowqnxo"
+            },
+            "section3": {
+                "heading": "Heading 3",
+                "text": "jnjqnowqnxo"
+            },
+            "section4": {
+                "heading": "Heading 4",
+                "text": "jnjqnowqnxo"
+            }
+        },
+        "backgroundColor": "#ffffff"
     },
     {
         "title": "Fanø Sommerhus",
@@ -67,9 +112,24 @@
             "Fotografi",
             "Branding"
         ],
-        "descriptionURL": "/projects/pitch-components",
+        "descriptionURL": "fanoe-sommerhus",
         "info": {
             "date": "July 2024"
-        }
+        },
+        "casePageSections": {
+            "section2": {
+                "heading": "Heading 2",
+                "text": "jnjqnowqnxo"
+            },
+            "section3": {
+                "heading": "Heading 3",
+                "text": "jnjqnowqnxo"
+            },
+            "section4": {
+                "heading": "Heading 4",
+                "text": "jnjqnowqnxo"
+            }
+        },
+        "backgroundColor": "#ffffff"
     }
 ]

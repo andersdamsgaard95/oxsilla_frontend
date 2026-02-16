@@ -41,7 +41,7 @@
   display: flex;
   gap: 2.5rem;
   flex-wrap: wrap;
-  flex-grow: 1;
+  margin-top: auto;
 }
 .lastRow .skillsUsed {
   display: flex;

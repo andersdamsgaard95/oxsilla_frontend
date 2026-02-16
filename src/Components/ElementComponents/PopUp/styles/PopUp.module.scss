@@ -1,0 +1,17 @@
+@use '../../../../styles//variables' as *;
+
+.popUp {
+    background-color: $color-white;
+    color: $color-black;
+    width: fit-content;
+    padding: $gap-medium;
+    position: fixed;
+    bottom: $gap-large;
+    right: $gap-large;
+    z-index: 10;
+    transition: transform 0.5s;
+
+    &.hidden {
+        transform: translateX(calc(100% + $gap-xlarge));
+    }
+}

@@ -28,14 +28,16 @@
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
 }
 @media screen and (max-width: 600px) {
   .heading {
     font-size: 1.5rem;
   }
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 .heading .smallH2Line {
   font-size: 0.7em;

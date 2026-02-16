@@ -1,3 +1,9 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
 .boxGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -11,4 +17,12 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+.centerBtn {
+  align-self: center;
+}
+
+.rightBtn {
+  align-self: end;
 }/*# sourceMappingURL=CompetenciesBoxes.module.css.map */

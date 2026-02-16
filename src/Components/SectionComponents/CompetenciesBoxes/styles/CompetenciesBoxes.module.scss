@@ -1,5 +1,11 @@
 @use '../../../../styles/variables' as *;
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xlarge;
+}
+
 .boxGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -12,4 +18,12 @@
         display: flex;
         flex-direction: column;
     }
+}
+
+.centerBtn {
+    align-self: center;
+}
+
+.rightBtn {
+    align-self: end;
 }

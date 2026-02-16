@@ -13,7 +13,7 @@ export default function ProjectSlide(props: ProjectSlideProps) {
 
     return (
         <Link
-            href={props.slide.descriptionURL}
+            href={`/cases/${props.slide.descriptionURL}`}
             className={styles.link}
         >
             <div className={styles.slide}>

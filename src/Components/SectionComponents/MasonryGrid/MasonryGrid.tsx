@@ -34,8 +34,8 @@ export default function MasonryGrid(props: MasonryGridProps) {
     }, [width, props.items]);
 
     return (
-        <SectionWrapper topPadding="none">
-            <ContentWrapper fullWidth>
+        <SectionWrapper>
+            <ContentWrapper fullWidth topPadding="none">
                 <div
                     className={styles.masonryGrid}
                 >

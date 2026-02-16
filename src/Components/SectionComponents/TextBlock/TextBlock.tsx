@@ -24,18 +24,17 @@ export default function TextBlock(props: TextBlockProps) {
     const buttonPositionClass = props.buttonPosition === 'center' ? styles.buttonCenter : props.buttonPosition === 'right' ? styles.buttonRight : '';
     return (
         <SectionWrapper
-            topPadding='large'
-            bottomPadding='large'
             backgroundImage={props.BackgroundImage}
             backgroundOpacityLayer={props.backgroundOpacityLayer}
+            minimumHeight={props.minimumHeightInPx}
         >
-            <ContentWrapper>
+            <ContentWrapper
+                topPadding='large'
+                bottomPadding='large'
+            >
                 <section
                     id='text-block-section'
                     className={styles.wrapper}
-                    style={{
-                        minHeight: props.minimumHeightInPx ? `${props.minimumHeightInPx / 10}rem` : ''
-                    }}
                 >
                     <div className={`${styles.contentContainer} ${textPositionClass}`}>
                         {props.cornerMarkers ? (

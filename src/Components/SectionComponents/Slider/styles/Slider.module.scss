@@ -47,8 +47,8 @@
     min-height: 100%;
 
     @media screen and (max-width: $screen-mobile) {
-        min-width: calc((100vw - $padding-small - $gap-small) / 1.5);
-        max-width: calc((100vw - $padding-small - $gap-small) / 1.5);
+        min-width: calc((100vw - $padding-small - $gap-small) / 1.2);
+        max-width: calc((100vw - $padding-small - $gap-small) / 1.2);
     }
 
     //responsive width//
@@ -98,11 +98,10 @@
 
     @media screen and (max-width: $screen-mobile) {
         left: $padding-small;
-        transform: translateY(-50%);
+        transform: translateY(-50%) rotate(90deg);
 
         &:hover {
             transform: translateY(calc(-50% - 0.5rem));
-            box-shadow: 0 6px 10px -3px rgba(0, 0, 0, 0.3);
         }
     }
 
@@ -144,11 +143,10 @@
 
     @media screen and (max-width: $screen-tablet) {
         right: $padding-small;
-        transform: translateY(-50%);
+        transform: translateY(-50%) rotate(-90deg);
 
         &:hover {
-            transform: translateY(calc(-50% - 0.5rem));
-            box-shadow: 0 6px 10px -3px rgba(0, 0, 0, 0.3);
+            transform: translateY(calc(-50% - 0.5rem)) rotate(-90deg);
         }
     }
 

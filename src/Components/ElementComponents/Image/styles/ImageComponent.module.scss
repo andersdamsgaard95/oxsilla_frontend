@@ -12,4 +12,8 @@
     &.contain {
         object-fit: contain;
     }
+
+    &.borderRadius {
+        border-radius: 1rem;
+    }
 }

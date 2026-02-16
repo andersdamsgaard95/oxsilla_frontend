@@ -19,6 +19,7 @@ interface HeroProps {
    backgroundOpacityLayer?: backgroundOpacityLayerType;
    addScrollArrow?: scrollArrowType;
    button?: ButtonType;
+   email?: string;
 }
 
 export default function Hero(props: HeroProps) {
@@ -30,11 +31,12 @@ export default function Hero(props: HeroProps) {
       <SectionWrapper
          backgroundColor={props.backgroundColor}
          backgroundImage={props.backgroundImage}
-         topPadding='none'
-         bottomPadding='none'
          backgroundOpacityLayer={props.backgroundOpacityLayer}
       >
-         <ContentWrapper>
+         <ContentWrapper
+            topPadding='none'
+            bottomPadding='none'
+         >
             <section id='hero-section' className={`${styles.wrapper} ${textPositionClass1} ${textPositionClass2}`}>
 
                <div className={`${styles.heroContentDiv} ${props.textPosition === 'center' ? styles.centerLogo : props.textPosition?.includes('right') ? styles.rightAlignLogo : ''}`}>
@@ -67,6 +69,10 @@ export default function Hero(props: HeroProps) {
 
                   {props.paragraph && (
                      <p>{props.paragraph}</p>
+                  )}
+
+                  {props.email && (
+                     <a className={styles.email} href="mailto:oxsilla.media@gmail.com">oxsilla.media@gmail.com</a>
                   )}
 
                   {props.button && (

@@ -1,0 +1,119 @@
+@use '../../../../styles/variables' as *;
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xxlarge;
+    overflow: hidden;
+    background: linear-gradient(to top right,
+            black,
+            /* bund sort */
+            rgba(255, 255, 255, 0.3),
+            black
+            /* top sort */
+        );
+
+    &:before {
+        z-index: 0;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top,
+                black,
+                /* bund sort */
+                transparent,
+                /* midten "gennemsigtig" */
+                black
+                /* top sort */
+            );
+
+    }
+
+}
+
+.caseHero {
+    z-index: 10;
+    display: flex;
+    gap: $gap-large;
+    align-items: center;
+    @include responsivePadding;
+
+    @media screen and (max-width: $screen-tablet) {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        flex: 1;
+    }
+
+    .heroImageWrapper {
+        width: 100%;
+        flex: 1;
+        aspect-ratio: 8/5;
+        position: relative;
+        background-color: rgb(54, 53, 53);
+        border-radius: 1rem;
+
+        .glow {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            z-index: -1;
+            width: 120%;
+            height: 180%;
+        }
+    }
+}
+
+.text {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+}
+
+.section2 {
+    padding-left: 10vw;
+    z-index: 10;
+}
+
+.section3 {
+    z-index: 10;
+    display: flex;
+    gap: $gap-large;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: $screen-tablet) {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .image2Container {
+        width: 100%;
+        max-width: 50rem;
+        aspect-ratio: 4/6;
+    }
+}
+
+.section4 {
+    display: flex;
+    gap: $gap-large;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: $screen-tablet) {
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+
+    .image3Container {
+        width: 100%;
+        max-width: 80rem;
+        aspect-ratio: 6/4;
+    }
+}

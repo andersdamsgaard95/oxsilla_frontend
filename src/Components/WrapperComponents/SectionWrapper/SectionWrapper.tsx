@@ -7,20 +7,23 @@ interface SectionWrapperProps {
     backgroundColor?: string;
     backgroundImage?: ImageType;
     backgroundOpacityLayer?: backgroundOpacityLayerType;
-    topPadding?: 'normal' | 'large' | 'small' | 'none';
-    bottomPadding?: 'normal' | 'large' | 'small' | 'none';
+    //topPadding?: 'normal' | 'large' | 'small' | 'none';
+    //bottomPadding?: 'normal' | 'large' | 'small' | 'none';
+    minimumHeight?: number;
 }
 
 export default function SectionWrapper(props: SectionWrapperProps) {
-    const topPaddingClass = props.topPadding === 'small' ? styles.smallTopPadding : props.topPadding === 'large' ? styles.largeTopPadding : props.topPadding === 'none' ? styles.noTopPadding : styles.normalTopPadding;
-    const bottomPaddingClass = props.bottomPadding === 'small' ? styles.smallbottomPadding : props.bottomPadding === 'large' ? styles.largeBottomPadding : props.bottomPadding === 'none' ? styles.noBottomPadding : styles.normalBottomPadding;
+    /*const topPaddingClass = props.topPadding === 'small' ? styles.smallTopPadding : props.topPadding === 'large' ? styles.largeTopPadding : props.topPadding === 'none' ? styles.noTopPadding : styles.normalTopPadding;
+    const bottomPaddingClass = props.bottomPadding === 'small' ? styles.smallbottomPadding : props.bottomPadding === 'large' ? styles.largeBottomPadding : props.bottomPadding === 'none' ? styles.noBottomPadding : styles.normalBottomPadding;*/
 
     return (
         <div
-            className={`${styles.wrapper} ${topPaddingClass} ${bottomPaddingClass}`}
+            className={`${styles.wrapper} `}
             style={{
-                backgroundColor: props.backgroundColor
+                backgroundColor: props.backgroundColor,
+                minHeight: props.minimumHeight ? `${props.minimumHeight / 10}rem` : ''
             }}
+
         >
             {props.backgroundImage && (
                 <div className={styles.backgroundImage}>
@@ -31,12 +34,12 @@ export default function SectionWrapper(props: SectionWrapperProps) {
             )}
 
             {props.backgroundOpacityLayer && (
-                <div className={`${styles.backgroundOpacityLayer} ${props.backgroundOpacityLayer.direction === 'to left' ? styles.toLeft : props.backgroundOpacityLayer.direction === 'to bottom' ? styles.toBottom : props.backgroundOpacityLayer.direction === 'to top' ? styles.toTop : styles.toRight}`}></div>
-            )}
-
-
-
-            {props.children}
+                props.backgroundOpacityLayer.sticky ? (
+                    <div className={styles.stickyBackgroundOpacityLayer}>{props.children}</div>
+                ) : (
+                    <div className={`${styles.backgroundOpacityLayer} ${props.backgroundOpacityLayer.direction === 'to left' ? styles.toLeft : props.backgroundOpacityLayer.direction === 'to bottom' ? styles.toBottom : props.backgroundOpacityLayer.direction === 'to top' ? styles.toTop : styles.toRight}`}></div>
+                ))}
+            {!props.backgroundOpacityLayer?.sticky && props.children}
         </div>
     )
 }
