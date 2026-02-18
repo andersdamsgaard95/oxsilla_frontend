@@ -27,18 +27,6 @@ export default function ProjectSlide(props: ProjectSlideProps) {
                     <p>{props.slide.shortDescription}</p>
 
                     <div className={styles.lastRow}>
-                        <ul className={styles.skillsUsed}>
-                            {props.slide.skillsUsed.map((skill, i) => (
-                                <li
-                                    key={i}
-                                    className={styles.skillBox}
-                                    style={getSkillColorCode(skill)}
-                                >
-                                    {skill}
-                                </li>
-                            ))}
-                        </ul>
-
                         {props.slide.descriptionURL && (
                             <div className={styles.linkContainer}>
                                 <div
@@ -53,6 +41,17 @@ export default function ProjectSlide(props: ProjectSlideProps) {
                             </div>
                         )}
 
+                        <ul className={styles.skillsUsed}>
+                            {props.slide.skillsUsed.map((skill, i) => (
+                                <li
+                                    key={i}
+                                    className={styles.skillBox}
+                                    style={getSkillColorCode(skill)}
+                                >
+                                    {skill}
+                                </li>
+                            ))}
+                        </ul>
 
                     </div>
                 </div>

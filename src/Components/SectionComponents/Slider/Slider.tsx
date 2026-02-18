@@ -112,14 +112,14 @@ export default function Slider(props: SliderProps) {
                                 disabled={prevIsDisabled}
                             >
                                 <div className={styles.arrow}>
-                                    <IconComponent
+                                    {/*<IconComponent
                                         image={{
-                                            src: '/icons/scroll_arrow.svg',
+                                            src: '/icons/arrow_new.svg',
                                             alt: 'Slide to previous slide'
                                         }}
                                         width={1}
                                         height={1}
-                                    />
+                                    />*/}
                                 </div>
 
                             </button>
@@ -130,16 +130,19 @@ export default function Slider(props: SliderProps) {
                                 onClick={nextSlide}
                                 disabled={nextIsDisabled}
                             >
+
                                 <div className={styles.arrow}>
-                                    <IconComponent
+                                    {/*<IconComponent
                                         image={{
-                                            src: '/icons/scroll_arrow.svg',
+                                            src: '/icons/arrow_new.svg',
                                             alt: 'Slide to next slide'
                                         }}
                                         width={1}
                                         height={1}
-                                    />
+                                    />*/}
                                 </div>
+
+
                             </button>
                         </>
                     )}

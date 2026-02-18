@@ -28,7 +28,11 @@ export interface portfolioProjectType {
     casePageSections: {
         [key: string]: {
             heading: string;
-            text: string;
+            text?: string;
+            text1?: string;
+            text2?: string;
+            list?: string[];
+            image?: ImageType;
         };
     },
     backgroundColor: string;

@@ -5,7 +5,7 @@
 }
 
 .slide {
-    background-color: $color-white;
+    background-color: rgba($color-white, 0.9);
     color: $color-black;
     //aspect-ratio: 8/9;
     border-radius: 1.2rem;
@@ -54,16 +54,22 @@
     //flex-grow: 1;
 
     .skillsUsed {
-        display: flex;
+        //display: flex;
         list-style: none;
         gap: $gap-small;
-        flex-wrap: wrap;
+        //flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
         .skillBox {
-            @include p-styles;
+            //@include p-styles;
+            font-size: 1.6rem;
             padding: 0.2rem 0.8rem;
             max-height: fit-content;
-            border-radius: 0.8rem;
+            border-radius: 0.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -75,6 +81,9 @@
         height: 100%;
         justify-content: end;
         align-self: end;
+        background: linear-gradient(to right, #858585, #EBEBEB);
+        border-radius: 0.5rem;
+        padding-right: $gap-large;
 
         .arrowLink {
             text-decoration: none;

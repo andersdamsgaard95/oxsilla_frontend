@@ -18,6 +18,7 @@
 }
 
 .caseHero {
+  margin-top: 5rem;
   z-index: 10;
   display: flex;
   gap: 5rem;
@@ -44,22 +45,56 @@
 }
 .caseHero .text {
   flex: 1;
+  max-width: 70rem;
 }
 .caseHero .heroImageWrapper {
   width: 100%;
-  flex: 1;
-  aspect-ratio: 8/5;
   position: relative;
-  background-color: rgb(54, 53, 53);
-  border-radius: 1rem;
+  overflow-y: scroll;
+  aspect-ratio: 8/5;
+  border-radius: 0.8rem;
 }
-.caseHero .heroImageWrapper .glow {
+.caseHero .heroImageWrapper .fullFrontPageWrapper img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.relativeWrapper {
+  position: relative;
+  width: 100%;
+  flex: 1;
+}
+.relativeWrapper .glow {
   position: absolute;
   top: 0%;
   left: 0%;
   z-index: -1;
   width: 120%;
   height: 180%;
+}
+.relativeWrapper::before {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  left: -4rem;
+  border-left: 20px solid #951d1d;
+  border-bottom: 5px solid #951d1d;
+  width: 25%;
+  height: 30%;
+  opacity: 0.6;
+}
+.relativeWrapper::after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  right: -4rem;
+  border-right: 20px solid #951d1d;
+  border-top: 5px solid #951d1d;
+  width: 30%;
+  height: 15%;
+  opacity: 0.6;
 }
 
 .text {
@@ -70,10 +105,48 @@
 }
 
 .section2 {
-  padding-left: 10vw;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+@media screen and (max-width: 1000px) {
+  .section2 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.section2 {
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section2 .text {
+  max-width: 70rem;
 }
 
+.section3 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+@media screen and (max-width: 1000px) {
+  .section3 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .section3 {
   z-index: 10;
   display: flex;
@@ -87,12 +160,32 @@
     align-items: start;
   }
 }
+.section3 .text {
+  flex: 1;
+  max-width: 70rem;
+}
 .section3 .image2Container {
-  width: 100%;
+  flex: 1;
   max-width: 50rem;
   aspect-ratio: 4/6;
 }
 
+.section4 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+@media screen and (max-width: 1000px) {
+  .section4 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .section4 {
   display: flex;
   gap: 5rem;
@@ -109,4 +202,17 @@
   width: 100%;
   max-width: 80rem;
   aspect-ratio: 6/4;
+}
+.section4 .text {
+  max-width: 70rem;
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+.section5 .text {
+  max-width: 70rem;
 }/*# sourceMappingURL=CasePageComponent.module.css.map */

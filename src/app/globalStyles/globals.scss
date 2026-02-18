@@ -15,6 +15,11 @@ html {
     background-color: $color-black;
 }
 
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 h1 {
     @include h1-styles;
 }

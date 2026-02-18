@@ -2,16 +2,19 @@
 
 import { useEffect, useState } from 'react';
 import styles from './styles/PopUp.module.scss';
+import Button from '../Button/Button';
+import { ButtonType } from '@/types/types';
 
 interface PopUpProps {
-
+    heading: string;
+    text?: string;
+    button?: ButtonType;
 }
 
 export default function PopUp(props: PopUpProps) {
     const [popUpIsShown, setPopUpIsShown] = useState<boolean>(false);
 
     useEffect(() => {
-        console.log("Popup mounted");
         const hasSeenPopUp = sessionStorage.getItem("hasSeenPopUp");
 
         if (!hasSeenPopUp) {
@@ -32,7 +35,18 @@ export default function PopUp(props: PopUpProps) {
             >
                 X
             </button>
-            <h2>Contact us</h2>
+            <h2>{props.heading}</h2>
+            {props.text && <p>{props.text}</p>}
+            {props.button && (
+                <div onClick={() => setPopUpIsShown(false)}>
+                    <Button
+                        text={props.button.text}
+                        href={props.button.href}
+                    />
+                </div>
+            )}
+
+
         </section>
     )
 

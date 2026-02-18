@@ -36,7 +36,14 @@ export default function RootLayout({
         <footer>
           <Footer />
         </footer>
-        <PopUp />
+        <PopUp
+          heading="hey stranger!"
+          text="ask us anything and we'll get back to you asap"
+          button={{
+            text: "contact",
+            href: "/contact"
+          }}
+        />
       </body>
     </html>
   );

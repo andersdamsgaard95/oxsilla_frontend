@@ -1,6 +1,7 @@
 import styles from './styles/CTA.module.scss';
 import Link from 'next/link';
 import { getThemeColor } from '@/helperFunctions/getThemeColor';
+import IconComponent from '../Icon/IconComponent';
 
 interface CTAProps {
     destination: string;
@@ -17,7 +18,14 @@ export default function CTA(props: CTAProps) {
         >
             {props.text}
             <span className={styles.arrow}>
-                →
+                <IconComponent
+                    image={{
+                        src: '/icons/arrow_new.svg',
+                        alt: ''
+                    }}
+                    width={1}
+                    height={1}
+                />
             </span>
         </div>
     ) : (

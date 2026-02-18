@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -45,6 +46,8 @@
   display: flex;
   gap: 5rem;
   overflow-x: scroll;
+  padding-bottom: 1rem;
+  background: transparent;
   /* Hide scrollbar for all browsers */
   scrollbar-width: none;
   /* Firefox */
@@ -97,7 +100,7 @@
   position: absolute;
   left: 10rem;
   top: 50%;
-  transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(180deg);
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -106,8 +109,13 @@
   justify-content: center;
   align-items: center;
 }
-.arrowBack:hover .arrow {
-  transform: scale(1.1);
+.arrowBack:hover .arrow::before {
+  height: 100%;
+}
+.arrowBack:hover .arrow::after {
+  left: -1.6rem;
+  width: calc(100% + 1.6rem);
+  height: 1.6rem;
 }
 @media screen and (max-width: 1000px) {
   .arrowBack {
@@ -117,10 +125,10 @@
 @media screen and (max-width: 600px) {
   .arrowBack {
     left: 1rem;
-    transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%);
   }
   .arrowBack:hover {
-    transform: translateY(calc(-50% - 0.5rem));
+    transform: translateY(calc(-50% - 0.5rem)) rotate(-45deg);
   }
 }
 .arrowBack:disabled {
@@ -133,14 +141,19 @@
   position: absolute;
   right: 10rem;
   top: 50%;
-  transform: translate(50%, -50%) rotate(-90deg);
+  transform: translate(50%, -50%);
   border: none;
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
 }
-.arrowNext:hover .arrow {
-  transform: scale(1.1);
+.arrowNext:hover .arrow::before {
+  height: 100%;
+}
+.arrowNext:hover .arrow::after {
+  left: -1.6rem;
+  width: calc(100% + 1.6rem);
+  height: 1.6rem;
 }
 @media screen and (max-width: 1000px) {
   .arrowNext {
@@ -150,10 +163,10 @@
 @media screen and (max-width: 1000px) {
   .arrowNext {
     right: 1rem;
-    transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%);
   }
   .arrowNext:hover {
-    transform: translateY(calc(-50% - 0.5rem)) rotate(-90deg);
+    transform: translateY(calc(-50% - 0.5rem));
   }
 }
 .arrowNext:disabled {
@@ -162,7 +175,40 @@
   display: none;
 }
 
+.arrowWrapper {
+  padding: 1rem;
+  backdrop-filter: invert(1);
+  background: rgba(255, 255, 255, 0.01);
+}
+
 .arrow {
+  position: relative;
   width: 5rem;
-  transition: transform 0.2s;
+  aspect-ratio: 1/1;
+  transition: all 0.2s;
+  transform: rotate(-45deg);
+}
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: -2.2rem;
+  right: 0;
+  width: 0.8rem;
+  height: calc(100% + 2.2rem);
+  /* højde = tykkelsen på linjen */
+  backdrop-filter: invert(1);
+  background: rgba(255, 255, 255, 0.01);
+  transition: all 0.2s;
+}
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1.6rem;
+  width: 100%;
+  height: 1.6rem;
+  /* højde = tykkelsen på linjen */
+  backdrop-filter: invert(1);
+  background: rgba(255, 255, 255, 0.01);
+  transition: all 0.2s;
 }/*# sourceMappingURL=Slider.module.css.map */

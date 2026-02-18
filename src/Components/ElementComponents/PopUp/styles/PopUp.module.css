@@ -3,13 +3,28 @@
   color: #000000;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 2.5rem;
+  padding: 5rem;
   position: fixed;
   bottom: 5rem;
   right: 5rem;
   z-index: 10;
   transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  border: 5px solid #951d1d;
+  border-radius: 0.5rem;
 }
 .popUp.hidden {
   transform: translateX(calc(100% + 10rem));
+}
+.popUp .closePopUp {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(194, 193, 193);
 }/*# sourceMappingURL=PopUp.module.css.map */

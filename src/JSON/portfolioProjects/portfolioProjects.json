@@ -5,12 +5,19 @@
             "src": "/images/portfolioProjects/pitchComponents/pitchComponents-hero.png",
             "alt": ""
         },
-        "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi quibusdam est expedita possimus, deserunt alias. Optio dolor, aperiam architecto dicta.",
+        "shortDescription": "Custom Shopify Architecture for a Performance-Driven Brand",
         "skillsUsed": [
             "Shopify",
+            "Liquid",
+            "JavaScript",
+            "HTML",
+            "LightRoom",
             "Branding",
-            "fotografi",
-            "e-commerse"
+            "PhotoShop",
+            "CSS",
+            "Fotografi",
+            "E-commerse",
+            "Figma"
         ],
         "descriptionURL": "pitch-components",
         "info": {
@@ -18,17 +25,39 @@
             "klient": "Pitch Components"
         },
         "casePageSections": {
+            "section1": {
+                "heading": "pitchcomponents.com",
+                "text": "A fully customized Shopify build designed to elevate a high-performance niche brand into a scalable global e-commerce platform.\nPitch Components engineers lightweight jetski components for elite freestyle and race athletes. The objective was clear: transform a functional webshop into a brand-driven commerce experience that communicates precision, performance, and credibility at every touchpoint.",
+                "image": {
+                    "src": "/images/portfolioProjects/pitchComponents/pitch-fullFrontPage.png",
+                    "alt": ""
+                }
+            },
             "section2": {
                 "heading": "Heading 2",
                 "text": "jnjqnowqnxo"
             },
             "section3": {
                 "heading": "Heading 3",
-                "text": "jnjqnowqnxo"
+                "text1": "Rather than a rigid theme, the site was designed and developed as a custom Webflow system built around reusable, editable components.",
+                "list": [
+                    "Custom template components – built modularly for maximum flexibility",
+                    "Client-friendly content structure – easily updated without developer support",
+                    "Responsive layouts with attention to motion, spacing and brand personality",
+                    "Semantic, clean CSS & class structure for consistency and scalability"
+                ],
+                "text2": "Every section was crafted to be both a design expression and a reusable asset the client can leverage across pages."
             },
             "section4": {
                 "heading": "Heading 4",
-                "text": "jnjqnowqnxo"
+                "text1": "Rather than a rigid theme, the site was designed and developed as a custom Webflow system built around reusable, editable components.",
+                "list": [
+                    "Custom template components – built modularly for maximum flexibility",
+                    "Client-friendly content structure – easily updated without developer support",
+                    "Responsive layouts with attention to motion, spacing and brand personality",
+                    "Semantic, clean CSS & class structure for consistency and scalability"
+                ],
+                "text2": "Every section was crafted to be both a design expression and a reusable asset the client can leverage across pages."
             }
         },
         "backgroundColor": "#000000"
@@ -44,8 +73,9 @@
             "React",
             "Next.js",
             "JavaScript",
-            "Strapi headless CMS",
-            "Branding"
+            "HTML",
+            "SCSS",
+            "Strapi"
         ],
         "descriptionURL": "glowith-skincare",
         "info": {
@@ -53,17 +83,39 @@
             "klient": "Glowith Skincare"
         },
         "casePageSections": {
+            "section1": {
+                "heading": "glowithskincare.com",
+                "text": "A fully customized Shopify build designed to elevate a high-performance niche brand into a scalable global e-commerce platform.\nPitch Components engineers lightweight jetski components for elite freestyle and race athletes. The objective was clear: transform a functional webshop into a brand-driven commerce experience that communicates precision, performance, and credibility at every touchpoint.",
+                "image": {
+                    "src": "/images/portfolioProjects/glowithSkincare/glowith-fullFrontPage.png",
+                    "alt": ""
+                }
+            },
             "section2": {
                 "heading": "Heading 2",
                 "text": "jnjqnowqnxo"
             },
             "section3": {
                 "heading": "Heading 3",
-                "text": "jnjqnowqnxo"
+                "text1": "Rather than a rigid theme, the site was designed and developed as a custom Webflow system built around reusable, editable components.",
+                "list": [
+                    "Custom template components – built modularly for maximum flexibility",
+                    "Client-friendly content structure – easily updated without developer support",
+                    "Responsive layouts with attention to motion, spacing and brand personality",
+                    "Semantic, clean CSS & class structure for consistency and scalability"
+                ],
+                "text2": "Every section was crafted to be both a design expression and a reusable asset the client can leverage across pages."
             },
             "section4": {
                 "heading": "Heading 4",
-                "text": "jnjqnowqnxo"
+                "text1": "Rather than a rigid theme, the site was designed and developed as a custom Webflow system built around reusable, editable components.",
+                "list": [
+                    "Custom template components – built modularly for maximum flexibility",
+                    "Client-friendly content structure – easily updated without developer support",
+                    "Responsive layouts with attention to motion, spacing and brand personality",
+                    "Semantic, clean CSS & class structure for consistency and scalability"
+                ],
+                "text2": "Every section was crafted to be both a design expression and a reusable asset the client can leverage across pages."
             }
         },
         "backgroundColor": "#ffffff"
@@ -74,10 +126,14 @@
             "src": "/images/portfolioProjects/ambe/Ambe-hero.jpg",
             "alt": ""
         },
-        "shortDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi quibusdam est expedita possimus, deserunt alias.",
+        "shortDescription": "Webflow Rebuild – From WordPress to Creative Freedom",
         "skillsUsed": [
             "Webflow",
-            "Branding"
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Branding",
+            "Figma"
         ],
         "descriptionURL": "escea-fireplaces",
         "info": {
@@ -85,17 +141,50 @@
             "klient": "Escea Fireplaces"
         },
         "casePageSections": {
+            "section1": {
+                "heading": "Ambehome.com",
+                "text": "We migrated AmbeHome from a restrictive WordPress setup to a fully custom Webflow experience — combining platform stability with complete visual flexibility.",
+                "image": {
+                    "src": "/images/portfolioProjects/ambe/ambe-fullFrontPage.png",
+                    "alt": ""
+                }
+            },
             "section2": {
-                "heading": "Heading 2",
-                "text": "jnjqnowqnxo"
+                "heading": "Why Webflow?",
+                "text": "WordPress had become a constraint: plugin issues, limited design control, and ongoing maintenance challenges.\nWebflow was chosen for:\nEnhanced stability & performance\nVisual design freedom with production-ready output\nNo reliance on third-party plugins\nFuture-proof content control for the client\nThe result is a site that’s both visually compelling and technically robust."
             },
             "section3": {
                 "heading": "Heading 3",
-                "text": "jnjqnowqnxo"
+                "text1": "Rather than a rigid theme, the site was designed and developed as a custom Webflow system built around reusable, editable components.",
+                "list": [
+                    "Custom template components – built modularly for maximum flexibility",
+                    "Client-friendly content structure – easily updated without developer support",
+                    "Responsive layouts with attention to motion, spacing and brand personality",
+                    "Semantic, clean CSS & class structure for consistency and scalability"
+                ],
+                "text2": "Every section was crafted to be both a design expression and a reusable asset the client can leverage across pages."
             },
             "section4": {
                 "heading": "Heading 4",
-                "text": "jnjqnowqnxo"
+                "text1": "Rather than a rigid theme, the site was designed and developed as a custom Webflow system built around reusable, editable components.",
+                "list": [
+                    "Custom template components – built modularly for maximum flexibility",
+                    "Client-friendly content structure – easily updated without developer support",
+                    "Responsive layouts with attention to motion, spacing and brand personality",
+                    "Semantic, clean CSS & class structure for consistency and scalability"
+                ],
+                "text2": "Every section was crafted to be both a design expression and a reusable asset the client can leverage across pages."
+            },
+            "section5": {
+                "heading": "The Oxsilla Difference",
+                "text1": "At Oxsilla, we don’t just build sites — we engineer digital platforms that:",
+                "list": [
+                    "Align with brand strategy",
+                    "Scale with business needs",
+                    "Give clients true autonomy",
+                    "Maintain performance, stability and flexibility"
+                ],
+                "text2": "Choosing us means choosing a partner who crafts sites with design precision and future-ready build logic — whether the goal is visual storytelling, conversion optimization, or long-term maintainability."
             }
         },
         "backgroundColor": "#ffffff"
@@ -110,6 +199,8 @@
         "skillsUsed": [
             "JavaScript",
             "Fotografi",
+            "HTML",
+            "CSS",
             "Branding"
         ],
         "descriptionURL": "fanoe-sommerhus",
@@ -117,17 +208,35 @@
             "date": "July 2024"
         },
         "casePageSections": {
+            "section1": {
+                "heading": "Fanoesommerhus.dk",
+                "text": "We migrated AmbeHome from a restrictive WordPress setup to a fully custom Webflow experience — combining platform stability with complete visual flexibility."
+            },
             "section2": {
                 "heading": "Heading 2",
                 "text": "jnjqnowqnxo"
             },
             "section3": {
                 "heading": "Heading 3",
-                "text": "jnjqnowqnxo"
+                "text1": "Rather than a rigid theme, the site was designed and developed as a custom Webflow system built around reusable, editable components.",
+                "list": [
+                    "Custom template components – built modularly for maximum flexibility",
+                    "Client-friendly content structure – easily updated without developer support",
+                    "Responsive layouts with attention to motion, spacing and brand personality",
+                    "Semantic, clean CSS & class structure for consistency and scalability"
+                ],
+                "text2": "Every section was crafted to be both a design expression and a reusable asset the client can leverage across pages."
             },
             "section4": {
                 "heading": "Heading 4",
-                "text": "jnjqnowqnxo"
+                "text1": "Rather than a rigid theme, the site was designed and developed as a custom Webflow system built around reusable, editable components.",
+                "list": [
+                    "Custom template components – built modularly for maximum flexibility",
+                    "Client-friendly content structure – easily updated without developer support",
+                    "Responsive layouts with attention to motion, spacing and brand personality",
+                    "Semantic, clean CSS & class structure for consistency and scalability"
+                ],
+                "text2": "Every section was crafted to be both a design expression and a reusable asset the client can leverage across pages."
             }
         },
         "backgroundColor": "#ffffff"
