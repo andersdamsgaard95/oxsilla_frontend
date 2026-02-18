@@ -33,7 +33,7 @@ export interface portfolioProjectType {
             text2?: string;
             list?: string[];
             image?: ImageType;
-        };
+        } | undefined;
     },
     backgroundColor: string;
 }
