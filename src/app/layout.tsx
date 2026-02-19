@@ -4,6 +4,7 @@ import { Varela_Round } from 'next/font/google'
 import Header from "@/Components/Header/Header";
 import Footer from "@/Components/Footer/Footer";
 import PopUp from "@/Components/ElementComponents/PopUp/PopUp";
+import PageLoader from "@/Components/ElementComponents/PageLoader/PageLoader";
 
 export const metadata: Metadata = {
   title: "Oxsilla Creative House | Web development and media productions",
@@ -44,6 +45,7 @@ export default function RootLayout({
             href: "/contact"
           }}
         />
+        <PageLoader />
       </body>
     </html>
   );

@@ -4,6 +4,11 @@
     display: flex;
     justify-content: space-between;
     @include responsivePadding;
+
+    @media screen and (max-width: $screen-mobile) {
+        flex-direction: column;
+        gap: $gap-large;
+    }
 }
 
 .footerInfo {
@@ -36,6 +41,6 @@
 }
 
 .iconWrapper {
-    max-width: 30rem;
+    max-width: 20rem;
     width: 50%;
 }

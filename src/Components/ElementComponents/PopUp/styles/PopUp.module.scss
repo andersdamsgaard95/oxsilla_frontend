@@ -4,6 +4,7 @@
     background-color: $color-white;
     color: $color-black;
     width: fit-content;
+    max-width: calc(100vw - $gap-xlarge);
     padding: $gap-large;
     position: fixed;
     bottom: $gap-large;

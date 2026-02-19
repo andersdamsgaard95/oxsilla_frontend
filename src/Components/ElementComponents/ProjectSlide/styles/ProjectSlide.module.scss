@@ -21,10 +21,6 @@
     aspect-ratio: 4/3;
     overflow: hidden;
 
-    @media screen and (max-width: $screen-mobile) {
-        aspect-ratio: 1/1;
-    }
-
     img {
         transition: scale 0.2s;
     }
@@ -60,6 +56,11 @@
         //flex-wrap: wrap;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @media screen and (max-width: $screen-mobile) {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
         .skillBox {
             //@include p-styles;

@@ -1,6 +1,13 @@
 .link {
   font-size: 2.5rem;
   letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 600px) {
+  .link {
+    font-size: 2rem;
+  }
+}
+.link {
   display: flex;
   gap: 1rem;
 }
