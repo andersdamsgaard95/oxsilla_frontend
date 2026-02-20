@@ -3,7 +3,7 @@ import styles from './styles/GlobalMenu.module.scss';
 import menu from '@/JSON/menu/menu.json';
 
 interface GlobalMenuProps {
-    setMenuIsShown: React.Dispatch<React.SetStateAction<boolean>>;
+    closeMenu: () => void;
 }
 
 export default function GlobalMenu(props: GlobalMenuProps) {
@@ -14,7 +14,7 @@ export default function GlobalMenu(props: GlobalMenuProps) {
                     <li key={i} className={styles.menuItem}>
                         <Link
                             href={item.url}
-                            onClick={() => props.setMenuIsShown(false)}
+                            onClick={() => props.closeMenu()}
                         >
                             {item.name}
                         </Link>

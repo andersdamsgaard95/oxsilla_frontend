@@ -55,12 +55,12 @@ p {
   font-size: 1.8rem;
 }
 
-header {
-  z-index: 20;
-  position: sticky;
-  top: 0;
-}
-
+/*header {
+    z-index: 20;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+}*/
 main {
   z-index: 10;
 }/*# sourceMappingURL=globals.css.map */

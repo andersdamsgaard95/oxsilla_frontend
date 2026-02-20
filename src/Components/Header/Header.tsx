@@ -10,6 +10,7 @@ export default function Header() {
     const [isScrolled, setIsScrolled] = useState<boolean>(false);
     const [isScrollingDown, setIsScrollingDown] = useState<boolean>(false);
     const lastScrollPosition = useRef(0);
+    const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
 
     useEffect(() => {
         let ticking = false;
@@ -38,8 +39,10 @@ export default function Header() {
     }, []);
 
     return (
-        <div className={`${styles.wrapper} ${isScrolled ? styles.headerScrolled : ''} ${isScrolled && isScrollingDown ? styles.hiddenHeader : ''}`}>
-            <Link
+        <header
+            className={`${styles.wrapper} ${isScrolled ? styles.headerScrolled : ''} ${isScrolled && isScrollingDown ? styles.hiddenHeader : ''} ${!menuIsOpen && isScrolled ? styles.invert : ''}`}
+        >
+            {/*<Link
                 className={`${styles.logoWrapper} ${isScrolled ? styles.hiddenLogo : ''}`}
                 href='/'
                 aria-hidden={isScrolled}
@@ -52,17 +55,17 @@ export default function Header() {
                     width={229}
                     height={42.7}
                 />
-            </Link>
+            </Link>*/}
 
             {/* Small logo */}
             <Link
-                className={`${styles.smallLogoWrapper} ${!isScrolled ? styles.hiddenLogo : ''}`}
+                className={`${styles.smallLogoWrapper} ${isScrolled ? styles.isScrolled : ''}`}
                 href='/'
-                aria-hidden={!isScrolled}
+            //aria-hidden={!isScrolled}
             >
                 <IconComponent
                     image={{
-                        src: '/icons/logo_small.png',
+                        src: '/icons/logo_small_vector.svg',
                         alt: ''
                     }}
                     width={1}
@@ -70,7 +73,10 @@ export default function Header() {
                 />
             </Link>
 
-            <BurgerMenu isScrolled={isScrolled} />
-        </div>
+            <BurgerMenu
+                isScrolled={isScrolled}
+                setIsOpen={setMenuIsOpen}
+            />
+        </header>
     )
 }

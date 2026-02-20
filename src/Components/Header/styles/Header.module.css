@@ -25,6 +25,8 @@
   justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease;
+  z-index: 10;
+  mix-blend-mode: normal;
 }
 @media screen and (min-width: 600px) {
   .wrapper {
@@ -34,6 +36,7 @@
 @media screen and (max-width: 600px) {
   .wrapper.headerScrolled {
     background-color: rgba(0, 0, 0, 0.8);
+    mix-blend-mode: normal;
   }
 }
 @media screen and (max-width: 600px) {
@@ -41,35 +44,41 @@
     transform: translateY(-100%);
   }
 }
-
-.logoWrapper {
-  width: 15rem;
-  cursor: pointer;
-  transition: transform 0.5s ease;
-  pointer-events: auto;
+.wrapper.invert {
+  /* This creates the inversion effect */
+  mix-blend-mode: difference;
 }
 
+/*.logoWrapper {
+    width: 15rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    pointer-events: auto;
+}*/
 .smallLogoWrapper {
-  width: 5rem;
+  width: 7rem;
   cursor: pointer;
-  transition: transform 0.5s ease;
-  position: absolute;
-  left: 2.5rem;
+  transition: all 0.5s ease;
   pointer-events: auto;
 }
 @media screen and (max-width: 1000px) {
   .smallLogoWrapper {
-    left: 0rem;
+    width: 5rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .smallLogoWrapper {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 600px) {
-  .hiddenLogo {
-    transform: translateY(-7rem);
+  .smallLogoWrapper.isScrolled {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .smallLogoWrapper.isScrolled {
+    transform: translateX(-5rem);
+    width: 5rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 600px) {
+  .smallLogoWrapper.isScrolled {
+    transform: translateX(-1rem);
   }
 }/*# sourceMappingURL=Header.module.css.map */

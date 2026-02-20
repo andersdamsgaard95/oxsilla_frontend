@@ -12,6 +12,8 @@
     justify-content: space-between;
     align-items: center;
     transition: all 0.5s ease;
+    z-index: 10;
+    mix-blend-mode: normal;
 
     @media screen and (min-width: $screen-mobile) {
         pointer-events: none;
@@ -20,6 +22,7 @@
     &.headerScrolled {
         @media screen and (max-width: $screen-mobile) {
             background-color: rgba($color-black, 0.8);
+            mix-blend-mode: normal;
         }
     }
 
@@ -28,34 +31,44 @@
             transform: translateY(-100%);
         }
     }
+
+    &.invert {
+        /* This creates the inversion effect */
+        mix-blend-mode: difference;
+    }
 }
 
-.logoWrapper {
+/*.logoWrapper {
     width: 15rem;
     cursor: pointer;
     transition: transform 0.5s ease;
     pointer-events: auto;
-}
+}*/
 
 .smallLogoWrapper {
-    width: 5rem;
+    width: 7rem;
     cursor: pointer;
-    transition: transform 0.5s ease;
-    position: absolute;
-    left: 2.5rem;
+    transition: all 0.5s ease;
+    //position: absolute;
+    //left: 2.5rem;
     pointer-events: auto;
 
     @media screen and (max-width: $screen-tablet) {
-        left: 0rem;
+        width: 5rem;
     }
 
-    @media screen and (max-width: $screen-mobile) {
-        display: none;
-    }
-}
+    &.isScrolled {
+        @media screen and (min-width: $screen-mobile) {
+            transform: translateX(calc(-100% - ($gap-small)));
 
-.hiddenLogo {
-    @media screen and (min-width: $screen-mobile) {
-        transform: translateY(-7rem);
+            @media screen and (max-width: $screen-tablet) {
+                transform: translateX(-$padding-medium);
+                width: 5rem;
+            }
+
+            @media screen and (max-width: $screen-mobile) {
+                transform: translateX(-$padding-small);
+            }
+        }
     }
 }

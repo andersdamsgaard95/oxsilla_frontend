@@ -2,10 +2,11 @@
 
 import GlobalMenu from './GlobalMenu/GlobalMenu';
 import styles from './styles/BurgerMenu.module.scss';
-import { useEffect, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
 interface BurgerMenuProps {
     isScrolled: boolean;
+    setIsOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function BurgerMenu(props: BurgerMenuProps) {
@@ -16,6 +17,7 @@ export default function BurgerMenu(props: BurgerMenuProps) {
 
         function handleScroll() {
             setMenuIsShown(false);
+            props.setIsOpen(false);
         }
 
         document.addEventListener('scroll', handleScroll)
@@ -37,11 +39,19 @@ export default function BurgerMenu(props: BurgerMenuProps) {
         };
     }, [menuIsShown]);
 
+    function closeMenu() {
+        setMenuIsShown(false);
+        props.setIsOpen(false);
+    }
+
     return (
         <>
             <button
                 className={`${styles.burgerMenu} ${isScrolled && !menuIsShown ? styles.isScrolled : ''} ${menuIsShown ? styles.exit : ''}`}
-                onClick={() => setMenuIsShown(!menuIsShown)}
+                onClick={() => {
+                    setMenuIsShown(!menuIsShown)
+                    props.setIsOpen(!menuIsShown);
+                }}
             >
                 <div className={styles.burgerLine}></div>
                 <div className={styles.burgerLine}></div>
@@ -53,14 +63,17 @@ export default function BurgerMenu(props: BurgerMenuProps) {
                 aria-hidden={!menuIsShown}
             >
                 <GlobalMenu
-                    setMenuIsShown={setMenuIsShown}
+                    closeMenu={closeMenu}
                 />
             </div>
 
             {menuIsShown && (
                 <div
                     className={styles.menuBackgroundLayer}
-                    onClick={() => setMenuIsShown(false)}
+                    onClick={() => {
+                        setMenuIsShown(false);
+                        props.setIsOpen(false);
+                    }}
                 ></div>
             )}
 

@@ -1,6 +1,6 @@
 .burgerMenu {
-  width: 3.5rem;
-  height: 2.5rem;
+  width: 4rem;
+  height: 2.7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,7 +13,7 @@
 }
 .burgerMenu .burgerLine {
   width: 100%;
-  height: 0.4rem;
+  height: 0.5rem;
   background-color: #ffffff;
   border-radius: 1rem;
   transition: all 0.5s ease;
@@ -21,6 +21,7 @@
 @media screen and (min-width: 600px) {
   .burgerMenu.isScrolled {
     transform: translateX(10.1rem);
+    width: 6rem;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1000px) {
@@ -81,6 +82,7 @@
   transition: transform 0.5s ease;
   z-index: 0;
   pointer-events: auto;
+  background-color: #000000;
 }
 @media screen and (max-width: 600px) {
   .navContainer {

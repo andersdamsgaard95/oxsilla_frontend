@@ -58,6 +58,7 @@
         overflow-y: scroll;
         aspect-ratio: 8/5;
         border-radius: $border-radius;
+        background-color: $color-black;
 
         .fullFrontPageWrapper {
 
@@ -187,4 +188,13 @@
     .text {
         max-width: 70rem;
     }
+}
+
+.ul {
+    padding-left: $gap-medium;
+    @include p-styles
+}
+
+.line {
+    margin-top: $gap-medium;
 }

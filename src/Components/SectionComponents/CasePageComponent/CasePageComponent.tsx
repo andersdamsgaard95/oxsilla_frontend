@@ -125,7 +125,11 @@ export default function CasePageComponent(props: CasePageComponentProps) {
                         <div className={styles.section2}>
                             <div className={styles.text}>
                                 <h2>{project.casePageSections.section2.heading}</h2>
-                                <p>{project.casePageSections.section2.text}</p>
+                                <div>
+                                    {project.casePageSections.section2.text?.split('\n').map((p, i) => (
+                                        <p key={i} className={styles.line}>{p}</p>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     )}
@@ -142,7 +146,7 @@ export default function CasePageComponent(props: CasePageComponentProps) {
                             <div className={styles.text}>
                                 <h2>{project.casePageSections.section3.heading}</h2>
                                 <p>{project.casePageSections.section3.text1}</p>
-                                <ul>
+                                <ul className={styles.ul}>
                                     {project.casePageSections.section3.list?.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))}
@@ -158,7 +162,7 @@ export default function CasePageComponent(props: CasePageComponentProps) {
                             <div className={styles.text}>
                                 <h2>{project.casePageSections.section4.heading}</h2>
                                 <p>{project.casePageSections.section4.text1}</p>
-                                <ul>
+                                <ul className={styles.ul}>
                                     {project.casePageSections.section4.list?.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))}
@@ -180,7 +184,7 @@ export default function CasePageComponent(props: CasePageComponentProps) {
                             <div className={styles.text}>
                                 <h2>{project.casePageSections.section5.heading}</h2>
                                 <p>{project.casePageSections.section5.text1}</p>
-                                <ul>
+                                <ul className={styles.ul}>
                                     {project.casePageSections.section5.list?.map((item, i) => (
                                         <li key={i}>{item}</li>
                                     ))}
