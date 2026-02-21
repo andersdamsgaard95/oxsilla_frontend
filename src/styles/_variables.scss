@@ -57,8 +57,12 @@ $border-radius: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.3rem;
 
+    @media screen and (max-width: $screen-tablet) {
+        font-size: 3rem;
+    }
+
     @media screen and (max-width: $screen-mobile) {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -67,8 +71,12 @@ $border-radius: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.3rem;
 
+    @media screen and (max-width: $screen-tablet) {
+        font-size: 2rem;
+    }
+
     @media screen and (max-width: $screen-mobile) {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -77,6 +85,10 @@ $border-radius: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.3rem;
 
+    @media screen and (max-width: $screen-tablet) {
+        font-size: 1.8;
+    }
+
     @media screen and (max-width: $screen-mobile) {
         font-size: 1.5rem;
     }
@@ -84,6 +96,14 @@ $border-radius: 0.8rem;
 
 @mixin p-styles {
     font-size: 1.8rem;
+
+    @media screen and (max-width: $screen-tablet) {
+        font-size: 1.7rem;
+    }
+
+    @media screen and (max-width: $screen-mobile) {
+        font-size: 1.5rem;
+    }
 }
 
 @mixin menuItem {

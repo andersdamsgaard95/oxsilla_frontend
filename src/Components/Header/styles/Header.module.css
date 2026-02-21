@@ -26,18 +26,18 @@
   align-items: center;
   transition: all 0.5s ease;
   z-index: 10;
-  mix-blend-mode: normal;
 }
 @media screen and (min-width: 600px) {
   .wrapper {
     pointer-events: none;
   }
 }
-@media screen and (max-width: 600px) {
-  .wrapper.headerScrolled {
-    background-color: rgba(0, 0, 0, 0.8);
-    mix-blend-mode: normal;
-  }
+.wrapper {
+  /*&.headerScrolled {
+      @media screen and (max-width: $screen-mobile) {
+          background-color: rgba($color-black, 0.8);
+      }
+  }*/
 }
 @media screen and (max-width: 600px) {
   .wrapper.hiddenHeader {
@@ -47,6 +47,12 @@
 .wrapper.invert {
   /* This creates the inversion effect */
   mix-blend-mode: difference;
+}
+@media screen and (max-width: 600px) {
+  .wrapper.invert.headerScrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    mix-blend-mode: normal;
+  }
 }
 
 /*.logoWrapper {

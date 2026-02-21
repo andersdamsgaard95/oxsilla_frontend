@@ -21,6 +21,9 @@ export default function cases() {
                 backgroundOpacityLayer={{
                     direction: 'to bottom'
                 }}
+                addScrollArrow={{
+                    idToScrollTo: "caseBoxes"
+                }}
             />
 
             <CaseBoxes

@@ -12,7 +12,7 @@ export default function CaseBoxes(props: CaseBoxesProps) {
     return (
         <SectionWrapper>
             <ContentWrapper>
-                <div className={styles.wrapper}>
+                <div id='caseBoxes' className={styles.wrapper}>
                     {props.cases.map((project, i) => {
                         return (
                             <div key={i}>

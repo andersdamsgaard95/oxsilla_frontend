@@ -7,6 +7,7 @@ export interface ButtonType {
     text: string;
     href: string;
     color?: 'black' | 'white';
+    xsmall?: boolean;
 }
 
 export interface CTAType {

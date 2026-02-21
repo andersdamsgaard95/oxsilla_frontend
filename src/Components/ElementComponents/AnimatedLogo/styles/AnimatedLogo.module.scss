@@ -1,6 +1,14 @@
 @use '../../../../styles/variables' as *;
 
 .logoWrapper {
-    width: 400px;
+    width: 35rem;
     height: auto;
+
+    @media screen and (max-width: $screen-tablet) {
+        width: 30rem;
+    }
+
+    @media screen and (max-width: $screen-mobile) {
+        width: 25rem;
+    }
 }

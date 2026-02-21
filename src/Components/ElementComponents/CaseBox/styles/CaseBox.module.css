@@ -46,6 +46,18 @@
 }
 .skillsUsed .skillBox {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 1000px) {
+  .skillsUsed .skillBox {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skillsUsed .skillBox {
+    font-size: 1.5rem;
+  }
+}
+.skillsUsed .skillBox {
   padding: 0.2rem 0.8rem;
   max-height: -moz-fit-content;
   max-height: fit-content;

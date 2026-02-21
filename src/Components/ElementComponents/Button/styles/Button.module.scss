@@ -9,16 +9,26 @@
     z-index: 10;
     opacity: 0.8;
     transition: opacity 0.2s;
+    font-size: 2.5rem;
 
     &.white {
         background-color: $color-white;
         color: $color-black;
         text-decoration: none;
-        font-size: 2.5rem;
     }
 
     &.black {
         background-color: $color-black;
+    }
+
+    &.xsmall {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+
+        @media screen and (max-width: $screen-tablet) {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+        }
     }
 
     &:hover {

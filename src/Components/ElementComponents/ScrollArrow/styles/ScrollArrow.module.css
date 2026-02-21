@@ -3,9 +3,9 @@
   bottom: 5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 4rem;
+  width: 10rem;
   cursor: pointer;
-  animation: pulse 2.5s ease-in-out infinite;
+  animation: pulse 2s ease-in-out infinite;
   transition: opacity 0.3s;
 }
 .scrollArrowContainer.hidden {
@@ -15,12 +15,12 @@
 
 @keyframes pulse {
   0% {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, 25%);
   }
   50% {
-    transform: translateX(-50%) scale(1.2);
+    transform: translate(-50%, 0);
   }
   100% {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, 25%);
   }
 }/*# sourceMappingURL=ScrollArrow.module.css.map */

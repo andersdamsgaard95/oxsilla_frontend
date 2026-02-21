@@ -61,10 +61,11 @@ export default function MasonryGrid(props: MasonryGridProps) {
                                             />
 
                                             <div className={styles.hoverContent}>
-                                                <p>{item.text}</p>
+                                                <p className={styles.text}>{item.text}</p>
                                                 <Button
                                                     text={item.buttonText}
                                                     href={item.href}
+                                                    xsmall
                                                 />
                                             </div>
                                         </>

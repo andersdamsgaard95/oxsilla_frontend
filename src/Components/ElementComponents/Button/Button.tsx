@@ -13,7 +13,7 @@ export default function Button(props: ButtonType) {
         >
             <Link
                 href={props.href}
-                className={`${styles.button} ${props.color === 'black' ? styles.black : styles.white}`}
+                className={`${styles.button} ${props.color === 'black' ? styles.black : styles.white} ${props.xsmall ? styles.xsmall : ''}`}
             >
                 {props.text}
             </Link>

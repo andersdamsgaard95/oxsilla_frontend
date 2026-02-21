@@ -44,7 +44,7 @@ export default function ScrollArrow(props: ScrollArrowProps) {
         >
             <IconComponent
                 image={{
-                    src: '/icons/scroll_arrow.svg',
+                    src: '/icons/scroll_arrow1.png',
                     alt: ''
                 }}
                 width={100}

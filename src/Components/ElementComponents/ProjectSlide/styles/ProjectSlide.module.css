@@ -63,6 +63,18 @@
 .lastRow .linkContainer {
   white-space: nowrap;
   font-size: 1.8rem;
+}
+@media screen and (max-width: 1000px) {
+  .lastRow .linkContainer {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .lastRow .linkContainer {
+    font-size: 1.5rem;
+  }
+}
+.lastRow .linkContainer {
   display: flex;
   width: 100%;
   height: 100%;

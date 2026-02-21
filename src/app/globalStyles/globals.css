@@ -23,9 +23,14 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.3rem;
 }
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -34,9 +39,14 @@ h2 {
   font-weight: 400;
   letter-spacing: 0.3rem;
 }
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 600px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -44,6 +54,11 @@ h3 {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 1000px) {
+  h3 {
+    font-size: 1.8;
+  }
 }
 @media screen and (max-width: 600px) {
   h3 {
@@ -53,6 +68,16 @@ h3 {
 
 p {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 /*header {

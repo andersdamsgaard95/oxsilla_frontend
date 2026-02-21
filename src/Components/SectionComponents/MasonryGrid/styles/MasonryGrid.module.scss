@@ -47,5 +47,10 @@
         flex-direction: column;
         gap: $gap-small;
         align-items: center;
+
+        .text {
+            white-space: wrap;
+            text-align: center;
+        }
     }
 }

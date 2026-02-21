@@ -49,9 +49,14 @@
   font-weight: 400;
   letter-spacing: 0.3rem;
 }
+@media screen and (max-width: 1000px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
 @media screen and (max-width: 600px) {
   .heading {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 .heading {
